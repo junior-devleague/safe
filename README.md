@@ -7,44 +7,43 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
 <h3>Final Project Breakdown</h3>
 <b>Assignments and Grading for the 4th quarter</b>
 <ul>
-  <li>Final project: Minimum of 3 commits a week and Pull request when a task is complete.</li>
+  <li>Final project: Minimum of 6 commits a week and Pull request when a task is complete</li>
   <li>Quizzes: Take home quiz every other week</li>
-  <li>Research assignments: Given very other week and turned in as a medium blog or Journal entry</li>
+  <li>Research assignments: Given every other week and turned in as a medium blog or Journal entry</li>
 </ul>
-
 
 <hr>
 
 <h3>Daily Scrum</h3>
 <b>Teams will meet daily for the first 5-10 mins of class to report the following:</b>
 <ul>
-  <li>Progress on their task.</li>
-  <li>What they're going to work on that day.</li>
-  <li>Any blockages per task or clarifications they may need.</li>
+  <li>Progress on their task. What did team members accomplish in the previous class?</li>
+  <li>What each team member is going to work for the current class period</li>
+  <li>Any road blocks per task or clarifications they may need from other team memebers or instructors</li>
 </ul>
 
 
 <b>Project Manager reports daily to the instructors the following:</b>
 <ul>
-  <li>Progress per task that the group is currently working on.</li>
-  <li>Projection as to what will be accomplished by the end of the week.</li>
-  <li>Any blockages per task or clarifications the team may need.</li>
+  <li>Progress per task that the group is currently working on</li>
+  <li>Projection as to what will be accomplished by the end of the week</li>
+  <li>Any road blocks per task or clarifications the team may need</li>
 </ul>
 
-<b>Developers are to notify the Project Manager and an instructor when:</b>
+<b>Developers are to notify the project manager and an instructor (in person or in Slack) when:</b>
 <ul>
   <li>A task is complete</li>
   <li>A pull request is made</li>
 </ul>
 
 
-<p>If there are questions about a task, code questions, blockages (challenges) please notify an instructor via Slack.</p>
+<p>If there are questions about a task, code questions, road blocks (challenges) please notify an instructor via Slack.</p>
 
 <hr>
 
 <h3>Formatting Structure</h3>
 
-<b>HTML, CSS, and Project images</b>
+<b>HTML, CSS, and Project Images</b>
 <ul>
   <li>File, class and id names should be all lowercase with dashes for spacing (if needed).</li>
   <li>Any nesting must be properly tabbed, and every element should be returned as a new line.</li>
