@@ -97,9 +97,22 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
   <li>Start each task with a block comment and include your pseudo code.</li>
   <li>Create array objects of mock data per page and store them in a variable</li>
   <li>Dynamically display mock data per view.</li>
-  <li>Create interactive buttons for the top navigation</li>
   <li>Sort - display data based on a keyword. Make the first items data show as default.</li>
+  <li>Create interactive buttons for the top navigation</li>
 </ul>
 
 <h2>Task Breakdown - part 2</h2>
-<ul></ul>
+<ul>
+  <li>Create class for remove animation</li>
+  <li>When an item is down voted more than a certain number, add class to 'remove' item</li>
+  <li>Create overlay side menu</li>
+</ul>
+
+<h2>Stretch Goals</h2>
+<ul>
+  <li>Make actual forms but do not send data.</li>
+  <li>Make comment area</li>
+  <li>Make comment area reveal or hide on click</li>
+  <li>Have Say Something form save to 'local storage' and display on topic page.</li>
+  <li>SUPER STRETCH GOAL: Connect Say Something to SMS API</li>
+</ul>
