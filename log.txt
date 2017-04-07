@@ -1,0 +1,7 @@
+4/5/17
+
+Zak: JS / CSS / HTML
+Zedrick: Forms (Say Something)
+Christian: Home Page + "All Topics" interface / HTML
+Jomari: Single Topic expand and single fade animation
+Talon: CSS / HTML

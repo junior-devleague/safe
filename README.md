@@ -1,7 +1,7 @@
 # safe
 WHS Safe Final Project
 
-<p>Project Manager: Not Assigned<br>
+<p>Project Manager: Zak Sakata<br>
 Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Allen Buco</p>
 
 <h3>Final Project Breakdown</h3>
