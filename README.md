@@ -110,6 +110,7 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
 
 <h2>Stretch Goals</h2>
 <ul>
+  <li>Make actual forms but do not send data.</li>
   <li>Make comment area</li>
   <li>Make comment area reveal or hide on click</li>
   <li>Have Say Something form save to 'local storage' and display on topic page.</li>
