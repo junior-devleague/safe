@@ -90,6 +90,18 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
   <li>Assign classes to reusable styles.</li>
   <li>Create a block comment if styles are for a specific view or user interaction, otherwise it's considered a general style.</li>
 </ul>
+<ul>
+  <li><b>Colors</b><ul>
+    <li>Red: #D0011B</li>
+    <li>Light Gray: #EDEDED</li>
+    <li>Dark Gray: #838383</li>
+  </ul></li>
+  <li><b>Fonts</b><ul>
+    <li>Logo <a href="https://fonts.google.com/specimen/Orbitron">Orbitron</a></li>
+    <li>Headings <a href="https://fonts.google.com/specimen/Raleway">Raleway Regular</a></li>
+    <li>Body <a href="https://fonts.google.com/specimen/Lato">Lato Regular</a></li>
+  </ul></li>
+</ul>
 
 <b>User Interactions</b>
 <ul>
