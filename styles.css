@@ -1,0 +1,155 @@
+header{
+	font-family: 'Orbitron', sans-serif;
+	height: 15%;
+	font-size: 40px;
+	text-align: center;
+	color: #D0011B;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	display: flex;
+}
+
+/*Most Recent, left side of home page*/
+
+#mostRecent{
+	border: 2px solid #D0011B;
+	width: 69%;
+	display: inline-block;
+	background-color: #EDEDED;
+}
+
+#mostRecent h1{
+  text-align: center;
+  font-size: 25px;
+  color: #D0011B;
+  margin-bottom: 50px;
+}
+
+.topic{
+	border: 2px solid #838383;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	/*padding-left: 60px;
+	padding-top: 20px;*/
+	height: 140px;
+	width: 90%;
+	background-color: white;
+	font-size: 13px;
+	color: #8D8D8D;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.allInfo{
+	height: 100%;
+	width: 85%;
+	margin-right: auto;
+	display: inline-block;
+}
+
+.description{
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 77%;
+  height: 60px;
+  display: block;
+}
+
+.titleBigger{
+	font-size: 17px;
+	color: #838383;
+}
+
+.date{
+	display: inline-block;
+	margin-top: 37px;
+	margin-left: 60px;
+	margin-right: 40%;
+}
+
+.comments{
+	display: inline-block;
+}
+
+.votes{
+  width: 90px;
+  margin-top: 55px;
+  margin-right: 10px;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.upArrow{
+  width: 35px;
+  display: inline-block;
+}
+
+.downArrow{
+  transform: rotateX(180deg);
+  width: 35px;
+  display: inline-block;
+}
+
+/*Popular Topics, right side of screen*/
+
+#popularTopics{
+	border: 2px solid #D0011B;
+	border-left: 0;
+	width: 30%;
+	display: inline-block;
+}
+
+#popularTopics h1{
+	font-size: 25px;
+	color: white;
+	background-color: #838383;
+	height: 50px;
+	margin-top: 0;
+	padding-top: 17px;
+	text-align: center;
+}
+
+#popularTopics h4{
+	text-align: center;
+	color: #D0011B;
+}
+
+.sideTopic{
+	font-size: 20px;
+	text-align: center;
+	color: #838383;
+	height: 70px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.sideTopic:hover{
+  background-color: #D0011B;
+  color: white;
+}
+
+.arrowLeft{
+  width: 15%;
+  margin-left: 5%;
+}
+
+.arrowLeft img{
+	width: 20px;
+	height: 24px;
+}
+
+.topicRight{
+  text-align: left;
+  width: 60%;
+  margin-bottom: 10px;
+}
