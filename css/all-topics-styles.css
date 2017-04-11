@@ -14,7 +14,7 @@ header{
 	margin-top: 40px;
 }
 
-#saySomething{
+#home{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	width: 190px;
@@ -31,20 +31,20 @@ header{
 	transition-timing-function: ease-in;
 }
 
-#saySomething:hover{
+#home:hover{
 	background-color: #EDEDED;
 	color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
 }
 
-#saySomething a{
+#home a{
 	color: white;
 	transition: 0.3s;
 	text-decoration: none;
 }
 
-#saySomething a:hover{
+#home a:hover{
 	color: #838383;
 	transition: 0.3s;
 	text-decoration: none;
@@ -58,17 +58,17 @@ body{
 	display: flex;
 }
 
-/*Most Recent, left side of home page*/
+/*All Topics, left side of home page*/
 
-#mostRecent{
+#allTopics{
 	border: 2px solid #D0011B;
 	width: 69%;
-	display: inline-block;
+	padding-bottom: 100px;
+	margin-bottom: 60px; 
 	background-color: #EDEDED;
-  margin-bottom: 70px;
 }
 
-#mostRecent h1{
+#allTopics h1{
   text-align: center;
   font-size: 25px;
   color: #D0011B;
@@ -99,93 +99,40 @@ body{
 	display: none;
 }
 
-#sortOverlay{
-  
+.centerTopics{
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	padding-right: 15px;
 }
 
 .topic{
-	border: 2px solid #838383;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	/*padding-left: 60px;
-	padding-top: 20px;*/
-	height: 140px;
-	width: 90%;
+	width: 40%;
+	height: 40px;
 	background-color: white;
-	font-size: 13px;
-	color: #8D8D8D;
-	display: flex;
-	flex-flow: row nowrap;
-	transition: 0.2s;
+	text-align: center;
+	color: #838383;
+	font-size: 20px;
+	border: 2px solid #838383;
+	transition: 0.3s;
+	transition-timing-function: ease;
+	padding: 1em;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+	flex-grow: 1;
 }
 
 .topic:hover{
-	transform: scale(1.03, 1.03);
-	transition: 0.2s;
+	color: white;
+	background-color: #D0011B;
+	transition: 0.4s;
 	transition-timing-function: ease;
+	transform: scale(0.99, 0.99);
 }
 
-.allInfo{
-	height: 100%;
-	width: 85%;
-	margin-right: auto;
-	display: inline-block;
-}
-
-.description{
-  margin-left: 60px;
-  margin-top: 20px;
-  width: 77%;
-  height: 90px;
-  display: block;
-  overflow-y: auto;
-}
-
-.titleBigger{
-	font-size: 17px;
-	color: #838383;
-}
-
-.bottomInfo{
-	display: flex;
-	flex-flow: row nowrap;
-	width: 77%;
-	height: 20px;
-  margin-top: 10px;
-	margin-left: 60px;
-}
-
-.date{
-	display: block;
-	/*margin-top: 37px;
-	margin-left: 60px;*/
-	width: 110px;
-}
-
-.comments{
-	display: block;
-	width: 110px;
-	margin-left: auto;
-}
-
-.votes{
-  width: 90px;
-  margin-top: 55px;
-  margin-right: 10px;
-  margin-left: auto;
-  display: inline-block;
-}
-
-.upArrow{
-  width: 35px;
-  display: inline-block;
-}
-
-.downArrow{
-  transform: rotateX(180deg);
-  width: 35px;
-  display: inline-block;
+.amount{
+	font-size: 15px;
 }
 
 /*Popular Topics, right side of screen*/
@@ -195,7 +142,7 @@ body{
 	border-left: 0;
 	width: 30%;
 	display: inline-block;
-  margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 
 #popularTopics h1{
@@ -206,24 +153,6 @@ body{
 	margin-top: 0;
 	padding-top: 17px;
 	text-align: center;
-}
-
-#popularTopics h4{
-  text-align: center;
-}
-
-#popularTopics h4 a{
-	color: #D0011B;
-	transition: 0.3s;
-  text-decoration: none;
-}
-
-#popularTopics h4 a:hover{
-	color: #838383;
-	font-size: 15.5px;
-	transition: 0.3s;
-	transition-timing-function: ease;
-  text-decoration: none;
 }
 
 .sideTopic{
@@ -267,11 +196,11 @@ body{
     display: none;
   }
 
-  #mostRecent{
+  #allTopics{
   	width: 100%;
   }
 
-  #saySomething{
+  #home{
   	display: block;
   	margin-left: auto;
     margin-right: auto;
