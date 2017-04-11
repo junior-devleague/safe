@@ -12,12 +12,24 @@
 	<div class="container">
 	  <!-- Left Side with Most Recent -->
 		<div id="mostRecent">
-		  <div class="sort">
-			  <span id="sortOverlay">SORT</span>
+		  <!-- Sort button and overlay -->
+		  <div id="sortOverlay" class="sideNav">
+				<!-- use, &times; as an x close button -->
+				<div class="closeDiv" onclick="closeOverlay()"><div class="closeButton">&times;</div></div>
+				<div class="sortOptions"><a href="">MOST RECENT</a></div>
+				<div class="sortOptions"><a href="">WEEKLY</a></div>
+				<div class="sortOptions"><a href="">MONTHLY</a></div>
+				<div class="sortOptions"><a href="">ALL TIME</a></div>
+				<div class="sortOptions"><a href="">MOST POPULAR</a></div>
+			</div>
+
+		  <div class="sort" onclick="openOverlay()">
+			  <span onclick="openOverlay()">SORT</span>
 			</div>
 			<div class="smallerSort">
 				<span id="sortOverlay">S</span>
 			</div>
+
 			<h1>MOST RECENT</h1>
 			<h4><a href="all-topics.html">VIEW ALL TOPICS</a></h4>
 			<!-- List of Topics -->
