@@ -85,8 +85,11 @@ body{
 	text-align: center;
 	font-size: 25px;
 	padding-top: 10px;
-	position: absolute;
+	/*position: absolute;*/
 	transition: 0.2s;
+	/*Added for dropdown menu for sort*/
+	display: inline-block;
+	position: relative;
 }
 
 .sort:hover{
@@ -231,4 +234,42 @@ body{
 	transition: 0.3s;
 	transition-timing-function: ease;
   }
+}
+
+/*Dropdown Sort Menu*/
+
+#sortOverlay{
+	background-color: #D0011B;
+    color: white;
+    width: 140px;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.sort:hover{
+	/*background-color: #E1011B;*/
+}
+.dropdown-content{
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.dropdown-content a{
+	color: #838383;
+	padding: 10px 12px;
+	text-decoration: none;
+	display: block;
+
+}
+.dropdown-content a:hover{
+	background-color: #EDEDED;
+}
+.showSort{
+	display: block;
 }
