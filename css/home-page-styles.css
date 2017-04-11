@@ -95,6 +95,10 @@ body{
 	transition-timing-function: ease;
 }
 
+.smallerSort{
+	display: none;
+}
+
 #sortOverlay{
   
 }
@@ -133,8 +137,9 @@ body{
   margin-left: 60px;
   margin-top: 20px;
   width: 77%;
-  height: 60px;
+  height: 90px;
   display: block;
+  overflow-y: auto;
 }
 
 .titleBigger{
@@ -142,15 +147,26 @@ body{
 	color: #838383;
 }
 
-.date{
-	display: inline-block;
-	margin-top: 37px;
+.bottomInfo{
+	display: flex;
+	flex-flow: row nowrap;
+	width: 77%;
+	height: 20px;
+  margin-top: 10px;
 	margin-left: 60px;
-	margin-right: 40%;
+}
+
+.date{
+	display: block;
+	/*margin-top: 37px;
+	margin-left: 60px;*/
+	width: 110px;
 }
 
 .comments{
-	display: inline-block;
+	display: block;
+	width: 110px;
+	margin-left: auto;
 }
 
 .votes{
@@ -204,7 +220,7 @@ body{
 
 #popularTopics h4 a:hover{
 	color: #838383;
-	transform: scale(0.95, 0.95);
+	font-size: 15.5px;
 	transition: 0.3s;
 	transition-timing-function: ease;
   text-decoration: none;
@@ -244,4 +260,46 @@ body{
   text-align: left;
   width: 60%;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 820px){
+  #popularTopics{
+    display: none;
+  }
+
+  #mostRecent{
+  	width: 100%;
+  }
+
+  #saySomething{
+  	display: block;
+  	margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 630px){
+  .sort{
+  	display: none;
+  }
+
+  .smallerSort{
+  	display: block;
+		background-color: #D0011B;
+		color: white;
+		width: 50px;
+		height: 40px;
+		text-align: center;
+		font-size: 25px;
+		padding-top: 10px;
+		position: absolute;
+		transition: 0.2s;
+  }
+
+  .smallerSort:hover{
+	padding-bottom: 3px;
+	transition: 0.3s;
+	transition-timing-function: ease;
+  }
 }

@@ -14,3 +14,12 @@ Between least period and today initial files were created (CSS, JS, HTML); also 
 Christian and Zak: Home page HTML view, structure and format
 Zedrick and Jomari: Form HTML view / JS functionality and form coding
 Talon: CSS on home page and other views, gathering resources of images / color hex
+
+4/10/17
+
+Scrum Meeting #2:
+After discussion, two of the three views/webpages were finished (HTML and CSS); these webviews were also linked and have working hover animations and effects. Today will consist of starting on JavaScript animations for the web form as well as completing the third webpage (All Topics). 
+
+Christian and Zak: All topics HTML view, structure and styling, make responsive
+Zedrick and Jomari: Start and JS animations for singles topic expansion
+Talon: Rearrange CSS properties for easier code reviewing

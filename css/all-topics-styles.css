@@ -77,6 +77,28 @@ body{
   display: inline-block;
 }
 
+.sort{
+	background-color: #D0011B;
+	color: white;
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	position: absolute;
+	transition: 0.2s;
+}
+
+.sort:hover{
+	padding-bottom: 3px;
+	transition: 0.3s;
+	transition-timing-function: ease;
+}
+
+.smallerSort{
+	display: none;
+}
+
 .centerTopics{
 	display: flex;
 	justify-content: center;
@@ -102,10 +124,11 @@ body{
 }
 
 .topic:hover{
-	color: white;`
+	color: white;
 	background-color: #D0011B;
-	transition: 0.3s;
+	transition: 0.4s;
 	transition-timing-function: ease;
+	transform: scale(0.99, 0.99);
 }
 
 .amount{
@@ -130,24 +153,6 @@ body{
 	margin-top: 0;
 	padding-top: 17px;
 	text-align: center;
-}
-
-#popularTopics{
-	text-align: center;
-}
-
-#popularTopics h4 a{
-	color: #D0011B;
-	transition: 0.3s;
-	text-decoration: none;
-}
-
-#popularTopics h4 a:hover{
-	color: #838383;
-	transform: scale(0.95, 0.95);
-	transition: 0.3s;
-	transition-timing-function: ease;
-	text-decoration: none;
 }
 
 .sideTopic{
@@ -184,4 +189,46 @@ body{
   text-align: left;
   width: 60%;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 820px){
+  #popularTopics{
+    display: none;
+  }
+
+  #allTopics{
+  	width: 100%;
+  }
+
+  #home{
+  	display: block;
+  	margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 630px){
+  .sort{
+  	display: none;
+  }
+
+  .smallerSort{
+  	display: block;
+		background-color: #D0011B;
+		color: white;
+		width: 50px;
+		height: 40px;
+		text-align: center;
+		font-size: 25px;
+		padding-top: 10px;
+		position: absolute;
+		transition: 0.2s;
+  }
+
+  .smallerSort:hover{
+	padding-bottom: 3px;
+	transition: 0.3s;
+	transition-timing-function: ease;
+  }
 }
