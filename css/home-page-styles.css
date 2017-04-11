@@ -55,6 +55,8 @@ body{
 }
 
 .container{
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -75,6 +77,10 @@ body{
   margin-bottom: 50px;
   width: 100%;
   display: inline-block;
+}
+
+#mostRecent h4{
+	display: none;
 }
 
 .sort{
@@ -115,12 +121,18 @@ body{
 	background-color: white;
 	font-size: 13px;
 	color: #8D8D8D;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	transition: 0.2s;
 }
 
 .topic:hover{
+	-webkit-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
 	transform: scale(1.03, 1.03);
 	transition: 0.2s;
 	transition-timing-function: ease;
@@ -148,7 +160,11 @@ body{
 }
 
 .bottomInfo{
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	width: 77%;
 	height: 20px;
@@ -183,6 +199,7 @@ body{
 }
 
 .downArrow{
+  -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
   width: 35px;
   display: inline-block;
@@ -231,9 +248,17 @@ body{
 	text-align: center;
 	color: #838383;
 	height: 70px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
 	align-items: center;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
@@ -271,6 +296,30 @@ body{
   	width: 100%;
   }
 
+  #mostRecent h1{
+	  margin-bottom: 2px;
+  }
+
+  #mostRecent h4{
+	  display: block;
+	  text-align: center;
+	  margin-bottom: 40px;
+  }
+
+  #mostRecent h4 a{
+		color: #A60015;
+		transition: 0.3s;
+	  text-decoration: none;
+	}
+
+	#mostRecent h4 a:hover{
+		color: #838383;
+		font-size: 15.5px;
+		transition: 0.3s;
+		transition-timing-function: ease;
+	  text-decoration: none;
+	}
+
   #saySomething{
   	display: block;
   	margin-left: auto;
@@ -298,8 +347,8 @@ body{
   }
 
   .smallerSort:hover{
-	padding-bottom: 3px;
-	transition: 0.3s;
-	transition-timing-function: ease;
+		padding-bottom: 3px;
+		transition: 0.3s;
+		transition-timing-function: ease;
   }
 }
