@@ -14,7 +14,7 @@ header{
 	margin-top: 40px;
 }
 
-#saySomething{
+#home{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	width: 190px;
@@ -31,20 +31,20 @@ header{
 	transition-timing-function: ease-in;
 }
 
-#saySomething:hover{
+#home:hover{
 	background-color: #EDEDED;
 	color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
 }
 
-#saySomething a{
+#home a{
 	color: white;
 	transition: 0.3s;
 	text-decoration: none;
 }
 
-#saySomething a:hover{
+#home a:hover{
 	color: #838383;
 	transition: 0.3s;
 	text-decoration: none;
@@ -58,17 +58,17 @@ body{
 	display: flex;
 }
 
-/*Most Recent, left side of home page*/
+/*All Topics, left side of home page*/
 
-#mostRecent{
+#allTopics{
 	border: 2px solid #D0011B;
 	width: 69%;
-	display: inline-block;
+	padding-bottom: 100px;
+	margin-bottom: 60px; 
 	background-color: #EDEDED;
-  margin-bottom: 70px;
 }
 
-#mostRecent h1{
+#allTopics h1{
   text-align: center;
   font-size: 25px;
   color: #D0011B;
@@ -77,99 +77,39 @@ body{
   display: inline-block;
 }
 
-.sort{
-	background-color: #D0011B;
-	color: white;
-	width: 140px;
-	height: 40px;
-	text-align: center;
-	font-size: 25px;
-	padding-top: 10px;
-	position: absolute;
-	transition: 0.2s;
+.centerTopics{
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	padding-right: 15px;
 }
 
-.sort:hover{
-	padding-bottom: 3px;
+.topic{
+	width: 40%;
+	height: 40px;
+	background-color: white;
+	text-align: center;
+	color: #838383;
+	font-size: 20px;
+	border: 2px solid #838383;
+	transition: 0.3s;
+	transition-timing-function: ease;
+	padding: 1em;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+	flex-grow: 1;
+}
+
+.topic:hover{
+	color: white;`
+	background-color: #D0011B;
 	transition: 0.3s;
 	transition-timing-function: ease;
 }
 
-#sortOverlay{
-  
-}
-
-.topic{
-	border: 2px solid #838383;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	/*padding-left: 60px;
-	padding-top: 20px;*/
-	height: 140px;
-	width: 90%;
-	background-color: white;
-	font-size: 13px;
-	color: #8D8D8D;
-	display: flex;
-	flex-flow: row nowrap;
-	transition: 0.2s;
-}
-
-.topic:hover{
-	transform: scale(1.03, 1.03);
-	transition: 0.2s;
-	transition-timing-function: ease;
-}
-
-.allInfo{
-	height: 100%;
-	width: 85%;
-	margin-right: auto;
-	display: inline-block;
-}
-
-.description{
-  margin-left: 60px;
-  margin-top: 20px;
-  width: 77%;
-  height: 60px;
-  display: block;
-}
-
-.titleBigger{
-	font-size: 17px;
-	color: #838383;
-}
-
-.date{
-	display: inline-block;
-	margin-top: 37px;
-	margin-left: 60px;
-	margin-right: 40%;
-}
-
-.comments{
-	display: inline-block;
-}
-
-.votes{
-  width: 90px;
-  margin-top: 55px;
-  margin-right: 10px;
-  margin-left: auto;
-  display: inline-block;
-}
-
-.upArrow{
-  width: 35px;
-  display: inline-block;
-}
-
-.downArrow{
-  transform: rotateX(180deg);
-  width: 35px;
-  display: inline-block;
+.amount{
+	font-size: 15px;
 }
 
 /*Popular Topics, right side of screen*/
@@ -179,7 +119,7 @@ body{
 	border-left: 0;
 	width: 30%;
 	display: inline-block;
-  margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 
 #popularTopics h1{
@@ -192,14 +132,14 @@ body{
 	text-align: center;
 }
 
-#popularTopics h4{
-  text-align: center;
+#popularTopics{
+	text-align: center;
 }
 
 #popularTopics h4 a{
 	color: #D0011B;
 	transition: 0.3s;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 #popularTopics h4 a:hover{
@@ -207,7 +147,7 @@ body{
 	transform: scale(0.95, 0.95);
 	transition: 0.3s;
 	transition-timing-function: ease;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .sideTopic{
