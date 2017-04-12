@@ -6,12 +6,13 @@ font-family: 'Lato', sans-serif;
 
 header{
 	font-family: 'Orbitron', sans-serif;
-	height: 15%;
 	font-size: 40px;
-	text-align: center;
-	color: #D0011B;
+	height: 15%;
 	margin-bottom: 0px;
 	margin-top: 40px;
+	text-align: center;
+	color: #D0011B;
+	
 }
 
 #home{
@@ -19,21 +20,21 @@ header{
 	text-align: center;
 	width: 190px;
 	height: 30px;
-	background-color: #838383;
-	color: white;
 	border-radius: 5px;
 	padding-top: 10px;
 	margin-left: auto;
 	margin-right: 3%;
 	position: relative;
 	bottom: 35px;
+	color: white;
+	background-color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-in;
 }
 
 #home:hover{
-	background-color: #EDEDED;
 	color: #838383;
+	background-color: #EDEDED;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
 }
@@ -52,10 +53,10 @@ header{
 
 .container{
 	font-family: 'Raleway', sans-serif;
-	background-color: #EDEDED;
-	color: #838383;
-	border: 2px solid #D0011B;
 	font-size: 20px;
+	color: #838383;
+	background-color: #EDEDED;
+	border: 2px solid #D0011B;
 	padding-top: 50px;
 	padding-bottom: 250px;
 }
