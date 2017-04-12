@@ -6,17 +6,15 @@ font-family: 'Lato', sans-serif;
 
 header{
 	font-family: 'Orbitron', sans-serif;
-	font-size: 40px;
 	height: 15%;
-	margin-top: 40px;
-	margin-bottom: 0px;
+	font-size: 40px;
 	text-align: center;
 	color: #D0011B;
+	margin-bottom: 0px;
+	margin-top: 40px;
 }
 
-/*say Something*/
-
-#saySomething{
+#home{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	width: 190px;
@@ -33,22 +31,23 @@ header{
 	transition-timing-function: ease-in;
 }
 
-#saySomething:hover{
+#home:hover{
 	background-color: #EDEDED;
 	color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
 }
 
-#saySomething a{
+#home a{
 	color: white;
 	transition: 0.3s;
 	text-decoration: none;
 }
 
-#saySomething a:hover{
+#home a:hover{
 	color: #838383;
 	transition: 0.3s;
+	text-decoration: none;
 }
 
 body{
@@ -61,27 +60,23 @@ body{
 	display: flex;
 }
 
-/*Most Recent, left side of home page*/
+/* All Topics, left side of home page */
 
-#mostRecent{
+#allTopics{
 	border: 2px solid #D0011B;
 	width: 69%;
-	display: inline-block;
+	padding-bottom: 100px;
+	margin-bottom: 60px; 
 	background-color: #EDEDED;
-  margin-bottom: 70px;
 }
 
-#mostRecent h1{
+#allTopics h1{
   text-align: center;
   font-size: 25px;
   color: #D0011B;
   margin-bottom: 50px;
   width: 100%;
   display: inline-block;
-}
-
-#mostRecent h4{
-	display: none;
 }
 
 .sort{
@@ -101,7 +96,6 @@ body{
 	transition: 0.3s;
 	transition-timing-function: ease;
 }
-
 
 .smallerSort{
 	display: none;
@@ -171,100 +165,48 @@ body{
 	transition: 0.3s;
 }
 
-.topic{
-	border: 2px solid #838383;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	/*padding-left: 60px;
-	padding-top: 20px;*/
-	height: 140px;
-	width: 90%;
-	background-color: white;
-	font-size: 13px;
-	color: #8D8D8D;
+.centerTopics{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-flow: row nowrap;
-	-ms-flex-flow: row nowrap;
-	flex-flow: row nowrap;
-	transition: 0.2s;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	padding-right: 15px;
+}
+
+.topic{
+	width: 40%;
+	height: 40px;
+	background-color: white;
+	text-align: center;
+	color: #838383;
+	font-size: 20px;
+	border: 2px solid #838383;
+	transition: 0.3s;
+	transition-timing-function: ease;
+	padding: 1em;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+	flex-grow: 1;
 }
 
 .topic:hover{
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	transform: scale(1.03, 1.03);
-	transition: 0.2s;
+	color: white;
+	background-color: #D0011B;
+	transition: 0.4s;
 	transition-timing-function: ease;
+	-webkit-transform: scale(0.99, 0.99);
+	-ms-transform: scale(0.99, 0.99);
+	transform: scale(0.99, 0.99);
 }
 
-.allInfo{
-	height: 100%;
-	width: 85%;
-	margin-right: auto;
-	display: inline-block;
-}
-
-.description{
-  margin-left: 60px;
-  margin-top: 20px;
-  width: 77%;
-  height: 90px;
-  display: block;
-  overflow-y: auto;
-}
-
-.titleBigger{
-	font-size: 17px;
-	color: #838383;
-}
-
-.bottomInfo{
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-flow: row nowrap;
-	-ms-flex-flow: row nowrap;
-	flex-flow: row nowrap;
-	width: 77%;
-	height: 20px;
-  margin-top: 10px;
-	margin-left: 60px;
-}
-
-.date{
-	display: block;
-	/*margin-top: 37px;
-	margin-left: 60px;*/
-	width: 110px;
-}
-
-.comments{
-	display: block;
-	width: 110px;
-	margin-left: auto;
-}
-
-.votes{
-  width: 90px;
-  margin-top: 55px;
-  margin-right: 10px;
-  margin-left: auto;
-  display: inline-block;
-}
-
-.upArrow{
-  width: 35px;
-  display: inline-block;
-}
-
-.downArrow{
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  width: 35px;
-  display: inline-block;
+.amount{
+	font-size: 15px;
 }
 
 /*Popular Topics, right side of screen*/
@@ -274,35 +216,36 @@ body{
 	border-left: 0;
 	width: 30%;
 	display: inline-block;
-  margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 
 #popularTopics h1{
 	font-size: 25px;
-	height: 50px;
-	padding-top: 17px;
-	margin-top: 0;
-	text-align: center;
 	color: white;
-	background-color: #838383;	
+	background-color: #838383;
+	height: 50px;
+	margin-top: 0;
+	padding-top: 17px;
+	text-align: center;
 }
 
-#popularTopics h4{
-  text-align: center;
+<<<<<<< HEAD
+#popularTopics{
+	text-align: center;
 }
 
 #popularTopics h4 a{
 	color: #D0011B;
 	transition: 0.3s;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 #popularTopics h4 a:hover{
 	color: #838383;
-	font-size: 15.5px;
+	transform: scale(0.95, 0.95);
 	transition: 0.3s;
 	transition-timing-function: ease;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .sideTopic{
@@ -317,7 +260,7 @@ body{
 	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	-webkit-justify-content: center;
-	-ms-flex-pack: center;
+  -ms-flex-pack: center;
 	justify-content: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -327,18 +270,15 @@ body{
 }
 
 .sideTopic:hover{
-	color: white;
-	background-color: #D0011B;
-	transition: 0.4s;
-	transition-timing-function: ease-out;
+  background-color: #D0011B;
+  color: white;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
 }
-
-/*arrow Left*/
 
 .arrowLeft{
   width: 15%;
   margin-left: 5%;
->>>>>>> master
 }
 
 .arrowLeft img{
@@ -347,9 +287,9 @@ body{
 }
 
 .topicRight{
-	width: 60%;
-	margin-bottom: 10px;
-	text-align: left;
+  text-align: left;
+  width: 60%;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 820px){
@@ -361,36 +301,15 @@ body{
   	top: 190px;
   }
 
-  #mostRecent{
+  #allTopics{
   	width: 100%;
   }
 
-  #mostRecent h1{
+  #allTopics h1{
   	margin-top: 10px;
-	  margin-bottom: 2px;
   }
 
-  #mostRecent h4{
-	  display: block;
-	  text-align: center;
-	  margin-bottom: 40px;
-  }
-
-  #mostRecent h4 a{
-		color: #A60015;
-		transition: 0.3s;
-	  text-decoration: none;
-	}
-
-	#mostRecent h4 a:hover{
-		color: #838383;
-		font-size: 15.5px;
-		transition: 0.3s;
-		transition-timing-function: ease;
-	  text-decoration: none;
-	}
-
-  #saySomething{
+  #home{
   	display: block;
   	margin-left: auto;
     margin-right: auto;
@@ -401,6 +320,10 @@ body{
 @media only screen and (max-width: 630px){
   .sort{
   	display: none;
+  }
+
+  #allTopics h1{
+    margin-bottom: 30px;
   }
 
   .sideNav{

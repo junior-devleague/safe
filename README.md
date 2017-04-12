@@ -90,6 +90,18 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
   <li>Assign classes to reusable styles.</li>
   <li>Create a block comment if styles are for a specific view or user interaction, otherwise it's considered a general style.</li>
 </ul>
+<ul>
+  <li><b>Colors</b><ul>
+    <li>Red: #D0011B</li>
+    <li>Light Gray: #EDEDED</li>
+    <li>Dark Gray: #838383</li>
+  </ul></li>
+  <li><b>Fonts</b><ul>
+    <li>Logo <a href="https://fonts.google.com/specimen/Orbitron">Orbitron</a></li>
+    <li>Headings <a href="https://fonts.google.com/specimen/Raleway">Raleway Regular</a></li>
+    <li>Body <a href="https://fonts.google.com/specimen/Lato">Lato Regular</a></li>
+  </ul></li>
+</ul>
 
 <b>User Interactions</b>
 <ul>
@@ -97,9 +109,22 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
   <li>Start each task with a block comment and include your pseudo code.</li>
   <li>Create array objects of mock data per page and store them in a variable</li>
   <li>Dynamically display mock data per view.</li>
-  <li>Create interactive buttons for the top navigation</li>
   <li>Sort - display data based on a keyword. Make the first items data show as default.</li>
+  <li>Create interactive buttons for the top navigation</li>
 </ul>
 
 <h2>Task Breakdown - part 2</h2>
-<ul></ul>
+<ul>
+  <li>Create class for remove animation</li>
+  <li>When an item is down voted more than a certain number, add class to 'remove' item</li>
+  <li>Create overlay side menu</li>
+</ul>
+
+<h2>Stretch Goals</h2>
+<ul>
+  <li>Make actual forms but do not send data.</li>
+  <li>Make comment area</li>
+  <li>Make comment area reveal or hide on click</li>
+  <li>Have Say Something form save to 'local storage' and display on topic page.</li>
+  <li>SUPER STRETCH GOAL: Connect Say Something to SMS API</li>
+</ul>
