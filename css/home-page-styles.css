@@ -17,6 +17,7 @@ header{
 #saySomething{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+  display: block;
 	width: 190px;
 	height: 30px;
 	background-color: #838383;
@@ -29,6 +30,7 @@ header{
 	bottom: 35px;
 	transition: 0.3s;
 	transition-timing-function: ease-in;
+  text-decoration: none;
 }
 
 #saySomething:hover{
@@ -36,15 +38,15 @@ header{
 	color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
+  text-decoration: none;
 }
 
-#saySomething a{
+#saySomething div{
 	color: white;
 	transition: 0.3s;
-	text-decoration: none;
 }
 
-#saySomething a:hover{
+#saySomething div:hover{
 	color: #838383;
 	transition: 0.3s;
 }

@@ -23,3 +23,7 @@ After discussion, two of the three views/webpages were finished (HTML and CSS); 
 Christian and Zak: All topics HTML view, structure and styling, make responsive
 Zedrick and Jomari: Start and JS animations for singles topic expansion
 Talon: Rearrange CSS properties for easier code reviewing
+
+4/12/17
+
+Scrum Meeting #3:
