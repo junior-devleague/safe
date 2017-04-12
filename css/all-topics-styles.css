@@ -92,13 +92,77 @@ body{
 }
 
 .sort:hover{
-	padding-bottom: 3px;
+	padding-bottom: 4px;
 	transition: 0.3s;
 	transition-timing-function: ease;
 }
 
 .smallerSort{
 	display: none;
+}
+
+.sideNav{
+  /*height: 74.9%;*/
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.4s;
+  /*border: 2px solid #838383;*/
+  box-sizing: border-box;
+}
+
+.sortOptions{
+  text-align: center;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  height: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sortOptions:hover{
+  background-color: #D0011B;
+  transition: 0.3s;
+}
+
+.sideNav div a{
+	color: #838383;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.sideNav div a:hover{
+	color: white;
+	transition: 0.3s;
+}
+
+.closeDiv{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.closeButton{
+  display: block;
+	transform: rotate(45deg);
+  width: 30px;
+	font-size: 40px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: default;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.closeButton:hover{
+	transform: rotate(90deg);
+	transform: scale(1.3, 1.3);
+	background-color: white;
+	transition: 0.3s;
 }
 
 .centerTopics{
@@ -216,8 +280,16 @@ body{
     display: none;
   }
 
+  .sideNav{
+  	top: 190px;
+  }
+
   #allTopics{
   	width: 100%;
+  }
+
+  #allTopics h1{
+  	margin-top: 10px;
   }
 
   #home{
@@ -237,22 +309,63 @@ body{
     margin-bottom: 30px;
   }
 
+  .sideNav{
+  	z-index: 2;
+  }
+
   .smallerSort{
   	display: block;
 		background-color: #D0011B;
 		color: white;
 		width: 50px;
 		height: 40px;
-		text-align: center;
+		box-sizing: content-box;
+		text-align: left;
 		font-size: 25px;
 		padding-top: 10px;
 		position: absolute;
 		transition: 0.2s;
+		z-index: 1;
   }
 
-  .smallerSort:hover{
-		padding-bottom: 3px;
-		transition: 0.3s;
+  #sortOverlay{
+  	margin-left: 17px;
+  	transition: 0.2s;
+  }
+
+  .hover:hover .smallerSort{
+		/*padding-left: 54px;*/
+		width: 29px;
+		text-align: left;
+		transition: 0.2s;
 		transition-timing-function: ease;
+  }
+
+  .hover:hover #sortOverlay{
+  	margin-left: 12px;
+  	transition: 0.2s;
+  }
+
+  .smallSortAnim{
+  	width: 0;
+  	height: 40px;
+  	background-color: #D0011B;
+		color: white;
+		text-align: center;
+		font-size: 25px;
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 5px;
+		position: absolute;
+    z-index: 0;
+		transition: 0.3s;
+		opacity: 0;
+  }
+
+  .hover:hover .smallSortAnim{
+  	width: 67px;
+  	padding-right: 3px;
+  	opacity: 1;
+  	transition: 0.3s;
   }
 }

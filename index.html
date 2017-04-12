@@ -1,12 +1,13 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="./css/home-page-styles.css">
-	<title>Home</title>
-	<header>S.A.F.E.</header>
-	<div id="saySomething"><a href="say-something.html">SAY SOMETHING</a></div>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Raleway" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Home</title>
+	<header>S.A.F.E.</header>
+	<div id="saySomething"><a href="say-something.html">SAY SOMETHING</a></div>	
 </head>
 <body>
 	<div class="container">
@@ -16,18 +17,24 @@
 		  <div id="sortOverlay" class="sideNav">
 				<!-- use, &times; as an x close button -->
 				<div class="closeDiv" onclick="closeOverlay()"><div class="closeButton">&times;</div></div>
-				<div class="sortOptions"><a href="">MOST RECENT</a></div>
-				<div class="sortOptions"><a href="">WEEKLY</a></div>
-				<div class="sortOptions"><a href="">MONTHLY</a></div>
-				<div class="sortOptions"><a href="">ALL TIME</a></div>
-				<div class="sortOptions"><a href="">MOST POPULAR</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">MOST RECENT</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">WEEKLY</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">MONTHLY</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">ALL TIME</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()"">MOST POPULAR</a></div>
 			</div>
 
-		  <div class="sort" onclick="openOverlay()">
-			  <span onclick="openOverlay()">SORT</span>
+		  <div class="sort" onclick="openOverlay(1)">
+			  <span onclick="openOverlay(1)">SORT</span>
 			</div>
-			<div class="smallerSort">
-				<span id="sortOverlay">S</span>
+
+			<div class="hover" onclick="openOverlay(1)">
+				<div class="smallerSort">
+					<span id="sortOverlay">S</span>
+				</div>
+				<div class="smallSortAnim">
+					<span id="overlayText">ORT</span>
+				</div>
 			</div>
 
 			<h1>MOST RECENT</h1>

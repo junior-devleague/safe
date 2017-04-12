@@ -2,22 +2,42 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="./css/all-topics-styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Home</title>
 	<header>S.A.F.E.</header>
 	<div id="home"><a href="index.html">HOME</a></div>
-	<link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Raleway" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="container">
 	  <!-- Left Side with All Topics displayed -->
 		<div id="allTopics">
-		  <div class="sort">
-			  <span id="sortOverlay">SORT</span>
+
+		  <!-- Sort button and overlay -->
+		  <div id="sortOverlay" class="sideNav">
+				<!-- use, &times; as an x close button -->
+				<div class="closeDiv" onclick="closeOverlay()"><div class="closeButton">&times;</div></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">MOST RECENT</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">WEEKLY</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">MONTHLY</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()">ALL TIME</a></div>
+				<div class="sortOptions"><a onclick="closeOverlay()"">MOST POPULAR</a></div>
 			</div>
-			<div class="smallerSort">
-				<span id="sortOverlay">S</span>
+
+		  <div class="sort" onclick="openOverlay(2)">
+			  <span onclick="openOverlay(2)">SORT</span>
 			</div>
+			
+			<div class="hover" onclick="openOverlay(2)">
+				<div class="smallerSort">
+					<span id="sortOverlay">S</span>
+				</div>
+				<div class="smallSortAnim">
+					<span id="overlayText">ORT</span>
+				</div>
+			</div>
+
 			<h1>ALL TOPICS</h1>
 			<div class="centerTopics">
 				<div class="topic">
