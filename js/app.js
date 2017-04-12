@@ -23,3 +23,6 @@ function closeOverlay(){
 	document.getElementById("sortOverlay").style.width = "0";
 	document.getElementById("sortOverlay").style.border = "0";
 }
+
+//Single Topic View
+
