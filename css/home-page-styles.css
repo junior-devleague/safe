@@ -460,3 +460,15 @@ body{
 
 /* Expand animation for single tyuupic */
 
+.desc-fade {
+	background :#AFAFAF;
+	z-index: 1;
+	position: absolute;
+    -webkit-box-shadow: 0 0 20px 30px #fff;
+    -moz-box-shadow: 0 0 20px 30px #fff;
+    box-shadow: 0 0 20px 30px #fff;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 250ms,1s;
+}
