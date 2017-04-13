@@ -27,3 +27,8 @@ Talon: Rearrange CSS properties for easier code reviewing
 4/12/17
 
 Scrum Meeting #3:
+The last and final webview (all-topic.html) was completed along with many UX and UI enhancements; each webpage's css styles had web prefixes added to them including a normalize.css. Pages were made dynamic with media queries for different computer sizes and phones alike. Sort button, on click, opens an overlay including different options to filter.
+
+Christian and Zak: Combine different sort button overlays at different screen widths
+Zedrick and Jomari: Continue progress on single-topic css and expansion
+Talon: Review CSS code, remove duplicates; reorder properties
