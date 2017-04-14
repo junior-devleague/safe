@@ -5,22 +5,22 @@ console.log ("Sanity Check");
 
 /*Dropdown menu for sort*/
 
-function showDropdownMenu(){
-	document.getElementById("myDropdown").classList.toggle("showSort")
-}
+// function showDropdownMenu(){
+// 	document.getElementById("myDropdown").classList.toggle("showSort")
+// }
 
-window.onclick = function(event) {
-	if (!event.target.matches('#sortOverlay')) {
+// window.onclick = function(event) {
+// 	if (!event.target.matches('#sortOverlay')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('showSort')) {
-        openDropdown.classList.remove('showSort');
-      }
-    }
-  }
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('showSort')) {
+//         openDropdown.classList.remove('showSort');
+//       }
+//     }
+//   }
 //////////////////////////////////////////////////////////////
 //SORT OVERLAY
 function openOverlay(x){
@@ -44,4 +44,9 @@ function openOverlay(x){
 function closeOverlay(){
 	document.getElementById("sortOverlay").style.width = "0";
 	document.getElementById("sortOverlay").style.border = "0";
+}
+
+
+function openLittleSort(){
+	document.getElementById("sortOverlay").classList.toggle("showLittleSort")
 }

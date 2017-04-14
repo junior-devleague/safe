@@ -14,19 +14,19 @@
 	  <!-- Left Side with All Topics displayed -->
 		<div id="allTopics">
 <!-- //////////////Christian////////// -->
-		  <div class="sort">
-			  <span id="sortOverlay" onclick="showDropdownMenu()">SORT</span>
+<!-- 		  <div class="littleSort">
+			  <span id="littleSortOverlay" onclick="showDropdownMenu()">SORT</span>
 			  <div id="myDropdown" class="dropdown-content">
 			  	<a href="">random</a>
 			  	<a href="">random</a>
 			  	<a href="">random</a>
 			  	<a href="">random</a>
 			  	<a href="">random</a>
-			  </div>
+			  </div> -->
 <!-- ///////////////////ZACK//////// -->
 
 		  <!-- Sort button and overlay -->
-		  <div id="sortOverlay" class="sideNav">
+		  <div id="sortOverlay" class="sideNav dropdown-content">
 				<!-- use, &times; as an x close button -->
 				<div class="closeDiv" onclick="closeOverlay()"><div class="closeButton">&times;</div></div>
 				<div class="sortOptions"><a onclick="closeOverlay()">MOST RECENT</a></div>
@@ -42,7 +42,7 @@
 			</div>
 			
 			<div class="hover" onclick="openOverlay(2)">
-				<div class="smallerSort">
+				<div class="smallerSort" onclick="openLittleSort()">
 					<span id="sortOverlay">S</span>
 				</div>
 				<div class="smallSortAnim">
