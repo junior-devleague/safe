@@ -137,3 +137,120 @@ header{
     margin-top: 70px;
   }
 }
+
+/* 420px width is for Nexus 5X/6P and iPhone 6 Plus screens */
+@media only screen and (max-width: 420px){
+	.container{
+		width: 100%;
+		font-size: 17px;
+		padding-bottom: 40px;
+  }
+
+  .form{
+		width: 340px;
+  }
+
+	#boxOne{
+		width: 330px;
+	  font-size: 12px;
+	}
+
+	.dropdown{
+		width: 330px;
+		font-size: 12px;
+	}
+
+	.dropdown select{
+		width: 350px;
+	  font-size: 12px;
+	}
+
+	#boxTwo{
+		width: 330px;
+		font-size: 12px;
+	}
+
+	#submit{
+		width: 230px;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+}
+
+/* 360px width is for S5 and iPhone 6 screens */
+@media only screen and (max-width: 375px){
+	.container{
+		width: 100%;
+		font-size: 15px;
+		padding-bottom: 40px;
+  }
+
+  .form{
+		width: 300px;
+  }
+
+	#boxOne{
+		width: 290px;
+	  font-size: 12px;
+	}
+
+	.dropdown{
+		width: 290px;
+		font-size: 12px;
+	}
+
+	.dropdown select{
+		width: 310px;
+	  font-size: 12px;
+	}
+
+	#boxTwo{
+		width: 290px;
+		font-size: 12px;
+	}
+
+	#submit{
+		width: 190px;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+}
+
+/* 320px width is for iPhone 5 screen sizes */
+@media only screen and (max-width: 320px){
+	.container{
+		width: 100%;
+		font-size: 13.5px;
+		padding-bottom: 40px;
+  }
+
+  .form{
+		width: 270px;
+  }
+
+	#boxOne{
+		width: 260px;
+	  font-size: 11px;
+	}
+
+	.dropdown{
+		width: 260px;
+		font-size: 11px;
+	}
+
+	.dropdown select{
+		width: 380px;
+	  font-size: 11px;
+	}
+
+	#boxTwo{
+		width: 260px;
+		font-size: 11px;
+	}
+
+	#submit{
+		width: 160px;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+}

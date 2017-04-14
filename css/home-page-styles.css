@@ -17,6 +17,7 @@ header{
 #saySomething{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+  display: block;
 	width: 190px;
 	height: 30px;
 	background-color: #838383;
@@ -29,6 +30,7 @@ header{
 	bottom: 35px;
 	transition: 0.3s;
 	transition-timing-function: ease-in;
+  text-decoration: none;
 }
 
 #saySomething:hover{
@@ -36,18 +38,17 @@ header{
 	color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
+  text-decoration: none;
 }
 
-#saySomething a{
+#saySomething div{
 	color: white;
 	transition: 0.3s;
-	text-decoration: none;
 }
 
-#saySomething a:hover{
+#saySomething div:hover{
 	color: #838383;
 	transition: 0.3s;
-	text-decoration: none;
 }
 
 body{
@@ -55,6 +56,8 @@ body{
 }
 
 .container{
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -77,6 +80,10 @@ body{
   display: inline-block;
 }
 
+#mostRecent h4{
+	display: none;
+}
+
 .sort{
 	background-color: #D0011B;
 	color: white;
@@ -90,7 +97,7 @@ body{
 }
 
 .sort:hover{
-	padding-bottom: 3px;
+	padding-bottom: 4px;
 	transition: 0.3s;
 	transition-timing-function: ease;
 }
@@ -99,8 +106,68 @@ body{
 	display: none;
 }
 
-#sortOverlay{
-  
+.sideNav{
+  /*height: 74.9%;*/
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.4s;
+  /*border: 2px solid #838383;*/
+  box-sizing: border-box;
+}
+
+.sortOptions{
+  text-align: center;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  height: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sortOptions:hover{
+  background-color: #D0011B;
+  transition: 0.3s;
+}
+
+.sideNav div a{
+	color: #838383;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.sideNav div a:hover{
+	color: white;
+	transition: 0.3s;
+}
+
+.closeDiv{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.closeButton{
+  display: block;
+	transform: rotate(45deg);
+  width: 30px;
+	font-size: 40px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: default;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.closeButton:hover{
+	transform: rotate(90deg);
+	transform: scale(1.3, 1.3);
+	background-color: white;
+	transition: 0.3s;
 }
 
 .topic{
@@ -115,12 +182,18 @@ body{
 	background-color: white;
 	font-size: 13px;
 	color: #8D8D8D;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	transition: 0.2s;
 }
 
 .topic:hover{
+	-webkit-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
 	transform: scale(1.03, 1.03);
 	transition: 0.2s;
 	transition-timing-function: ease;
@@ -148,7 +221,11 @@ body{
 }
 
 .bottomInfo{
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	width: 77%;
 	height: 20px;
@@ -183,6 +260,7 @@ body{
 }
 
 .downArrow{
+  -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
   width: 35px;
   display: inline-block;
@@ -231,9 +309,17 @@ body{
 	text-align: center;
 	color: #838383;
 	height: 70px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
 	align-items: center;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
@@ -267,9 +353,38 @@ body{
     display: none;
   }
 
+  .sideNav{
+  	top: 190px;
+  }
+
   #mostRecent{
   	width: 100%;
   }
+
+  #mostRecent h1{
+  	margin-top: 10px;
+	  margin-bottom: 2px;
+  }
+
+  #mostRecent h4{
+	  display: block;
+	  text-align: center;
+	  margin-bottom: 40px;
+  }
+
+  #mostRecent h4 a{
+		color: #A60015;
+		transition: 0.3s;
+	  text-decoration: none;
+	}
+
+	#mostRecent h4 a:hover{
+		color: #838383;
+		font-size: 15.5px;
+		transition: 0.3s;
+		transition-timing-function: ease;
+	  text-decoration: none;
+	}
 
   #saySomething{
   	display: block;
@@ -284,22 +399,63 @@ body{
   	display: none;
   }
 
+  .sideNav{
+  	z-index: 2;
+  }
+
   .smallerSort{
   	display: block;
 		background-color: #D0011B;
 		color: white;
 		width: 50px;
 		height: 40px;
-		text-align: center;
+		box-sizing: content-box;
+		text-align: left;
 		font-size: 25px;
 		padding-top: 10px;
 		position: absolute;
 		transition: 0.2s;
+		z-index: 1;
   }
 
-  .smallerSort:hover{
-	padding-bottom: 3px;
-	transition: 0.3s;
-	transition-timing-function: ease;
+  #sortOverlay{
+  	margin-left: 17px;
+  	transition: 0.2s;
+  }
+
+  .hover:hover .smallerSort{
+		/*padding-left: 54px;*/
+		width: 29px;
+		text-align: left;
+		transition: 0.2s;
+		transition-timing-function: ease;
+  }
+
+  .hover:hover #sortOverlay{
+  	margin-left: 12px;
+  	transition: 0.2s;
+  }
+
+  .smallSortAnim{
+  	width: 0;
+  	height: 40px;
+  	background-color: #D0011B;
+		color: white;
+		text-align: center;
+		font-size: 25px;
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 5px;
+		position: absolute;
+    z-index: 0;
+		transition: 0.3s;
+		opacity: 0;
+  }
+
+  .hover:hover .smallSortAnim{
+  	width: 67px;
+  	padding-right: 3px;
+  	opacity: 1;
+  	transition: 0.3s;
   }
 }
