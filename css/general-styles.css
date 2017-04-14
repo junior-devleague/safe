@@ -1,0 +1,32 @@
+/* Styles that apply and are common to on every page */
+
+/* Header */
+
+/*Body - put all font styles, colors */
+
+/*Common styles for top action button*/
+
+/*Combine styles for most recent and all topics*/
+
+/*Move .sort here*/
+
+/*Move .closeButton here*/
+
+/*Move .sideNav here*/
+
+/*Move user entries here for both*/
+/*Note flex-wrap is nowrap for default. Consider using flex-direction only.*/
+
+/*All children classes for entries here*/
+/*Use flex on votes*/
+/*align-self:center;
+  remove margins and display: inline-block;
+*/
+/*Add down arrow. */
+
+/*add popularTopics and children classes here*/
+
+/*FUTURE: CSS for mobile first breakpoints go from min and above -- its ok since the designs were desktop first.*/
+
+/*Consider having a flexbox container class. use it every where write it ONCE!*/
+/*example: .column-container all direct children will be flexbox items no matter what the class is.*/

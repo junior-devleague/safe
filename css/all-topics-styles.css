@@ -67,7 +67,7 @@ body{
 	border: 2px solid #D0011B;
 	width: 69%;
 	padding-bottom: 100px;
-	margin-bottom: 60px; 
+	margin-bottom: 60px;
 	background-color: #EDEDED;
 }
 
@@ -130,7 +130,7 @@ body{
   background-color: #D0011B;
   transition: 0.3s;
 }
-
+/*no need be too specific '.sideNav a' is good*/
 .sideNav div a{
 	color: #838383;
 	text-decoration: none;
