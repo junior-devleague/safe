@@ -23,3 +23,24 @@ function closeOverlay(){
 	document.getElementById("sortOverlay").style.width = "0";
 	document.getElementById("sortOverlay").style.border = "0";
 }
+
+
+
+
+/* SAY SOMETHING FORM */
+
+function clickDrop(x){
+  if(x == 1){
+    document.getElementById("topicDrop").classList.toggle("showTopic");
+  }else if(x == 2){
+    document.getElementById("contactListDrop").classList.toggle("showTopic");
+  }
+}
+
+function replaceButton(id){
+  if (id == "SCIENCE LAB" || id == "COMPUTER LAB" || id=="CAFETERIA"){
+    document.getElementById("whatTopic").innerHTML = (id);
+  }else if(id == "PRINCIPAL" || id == "COUNSELOR" || id == "MAIN OFFICE" || id == "JANITOR"){
+    document.getElementById("whatContact").innerHTML = (id);
+  }
+}
