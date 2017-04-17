@@ -25,12 +25,14 @@ function closeOverlay(){
 }
 
 //Single Topic View
+// Expand Function
 
+//When click on topic, expand topic
 var expand = function() {
 	var wrapHeight = document.getElementByClass(".topic .description").height();
 	var descHeight = document.getElementByClass(".topic").height();
 	if (wrapHeight <= descHeight) {
-		document.getElementByClass(".topic")
+		document.getElementByClass(".topic .description")
 	}
 
 }
