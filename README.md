@@ -128,3 +128,27 @@ Developers: Zak Sakata, Jomari Jacinto, Zedrick Ara, Talon Navarez, Christian Al
   <li>Have Say Something form save to 'local storage' and display on topic page.</li>
   <li>SUPER STRETCH GOAL: Connect Say Something to SMS API</li>
 </ul>
+
+<h2>After review: 4/13</h2>
+<b>To Do</b>
+<ul>
+  <li>One more view: single-topic page</li>
+  <li>Reveal comments</li>
+  <li>Voting system</li>
+  <li>Displaying data dynamically</li>
+  <li>Display temp data using submit form and Local Storage</li>
+  <li>Move header into body tag and nav button into header</li>
+  <li>Optimize css into general.css - link to all pages</li>
+  <li>Combine classes with same styles into general. <ul>
+    <li>Example: #most-recent, #all-topics{...}</li>
+  </ul></li>
+  <li>Added down arrow</li>
+</ul>
+<h1>Nice job. Keep communication open and fair. Awesome job collaborating so far.</h1>
+<b>Improvments</b>
+<ul>
+  <li>Zak: bruh delegate and pair program from now on. Make comments where code can be improved. Little coding from here on out. Time to just navigate. Also research Local Storage. We will be doing a intro lesson a week from now.</li>
+  <li>Jomari and Zedrick: psuedo code the logic in app.js for the comment reveal. What's the plan/logic? How will you impliment it?</li>
+  <li>Christian: psuedo code the logic for voting system. What's the plan/logic? How will you impliment it?</li>
+  <li>Talon: create the styles for the voting system. Animation for removing an entry and create the mock data objects array in js.</li>
+</ul>

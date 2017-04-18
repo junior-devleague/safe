@@ -28,14 +28,36 @@ function closeOverlay(){
 // Expand Function
 
 //When click on topic, expand topic
-var expand = function() {
-	var wrapHeight = document.getElementByClass(".topic .description").height();
-	var descHeight = document.getElementByClass(".topic").height();
-	if (wrapHeight <= descHeight) {
-		document.getElementByClass(".topic .description")
-	}
-
+function expand() {
+ /*   var exp = document.querySelectorAll(".topic");
+    var i;
+    for (i = 0; i < exp.length; i++) {
+        exp[i].style.height = "500px";
+    }*/
+    console.log(this);
 }
+
+//Have a function where if div topic is clicked on it changes class name to another SPECIFIC name
+
+//Have another function that would look for that SPECIFIC name and make it the only on that expands to fix the problem of having all of them expand
+
+//function that reverts the topic's div name back to the old name 
+
+
+
+//Click Topic
+
+//Change Height 100% (Click off collapses)
+
+//Unhides description
+
+
+
+
+
+
+
+
 
 /*Turn this code from JQuery to Javascript:
 $(function(){
