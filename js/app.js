@@ -54,3 +54,18 @@ function replaceButton(id){
 /*When down arrow clicks add plus one,
  check if its equal to the number of downvote
   then fade out if it exceed the number*/
+//////////////////////////////////////////////////////
+/*Problems may occur:
+    one like/dislike per computer
+*/
+var likes = 0;
+var dislike = 0;
+function increaseLikes(z){
+  likes++;
+  document.getElementById(z).innerHTML = document.getElementById(z).innerHTML + likes
+}
+
+function increaseDownVote(y){
+  dislike++;
+  document.getElementById(y).innerHTML = document.getElementById(y).innerHTML + dislike
+}
