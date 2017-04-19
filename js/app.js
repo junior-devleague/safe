@@ -44,3 +44,13 @@ function replaceButton(id){
     document.getElementById("whatContact").innerHTML = (id);
   }
 }
+
+
+/*Vote System*/
+
+/*Most Likes go on top of div (Either shifts on top/ fade in fade out)*/
+/*When up arrow clicks add plus one,
+ it compare which one is the highest number*/
+/*When down arrow clicks add plus one,
+ check if its equal to the number of downvote
+  then fade out if it exceed the number*/
