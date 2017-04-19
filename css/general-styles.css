@@ -1,0 +1,361 @@
+ /* Styles that apply and are common to on every page */
+
+/* Header */
+header{
+	/* Fonts like Orbitron may not show unless connected to the internet because it is from Google Fonts */
+	font-family: 'Orbitron', sans-serif;
+	height: 15%;
+	font-size: 40px;
+	text-align: center;
+	color: #D0011B;
+	margin-bottom: 0px;
+	margin-top: 40px;
+}
+
+/* Body - put all font styles, colors */
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Common styles for top action button */
+#topButton{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+  display: block;
+	width: 190px;
+	height: 30px;
+	background-color: #838383;
+	color: white;
+	border-radius: 5px;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: 3%;
+	position: relative;
+	bottom: 35px;
+	transition: 0.3s;
+	transition-timing-function: ease-in;
+  text-decoration: none;
+}
+
+#topButton:hover{
+	background-color: #EDEDED;
+	color: #838383;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
+  text-decoration: none;
+}
+
+#topButton a{
+	color: white;
+	transition: 0.3s;
+}
+
+#topButton a:hover{
+	color: #838383;
+	transition: 0.3s;
+}
+
+/* Combine styles for most recent and all topics */
+#mostRecent, #allTopics{
+	border: 2px solid #D0011B;
+	width: 69%;
+	background-color: #EDEDED;
+	margin-bottom: 70px;
+}
+
+#mostRecent h1, #allTopics h1{
+  text-align: center;
+  font-size: 25px;
+  color: #D0011B;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+/* Move .sort here */
+.sort{
+	background-color: #D0011B;
+	color: white;
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	position: absolute;
+	transition: 0.2s;
+}
+
+.sort:hover{
+	padding-bottom: 4px;
+	transition: 0.3s;
+	transition-timing-function: ease;
+}
+
+.smallerSort{
+	display: none;
+}
+/* Move .closeButton here */
+.closeDiv{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.closeButton{
+  display: block;
+	transform: rotate(45deg);
+  width: 30px;
+	font-size: 40px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: default;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.closeButton:hover{
+	transform: rotate(90deg);
+	transform: scale(1.3, 1.3);
+	background-color: white;
+	transition: 0.3s;
+}
+
+/* Move .sideNav here */
+.sideNav{
+  /*height: 74.9%;*/
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.4s;
+  /*border: 2px solid #838383;*/
+  box-sizing: border-box;
+}
+
+.sortOptions{
+  text-align: center;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  height: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sortOptions:hover{
+  background-color: #D0011B;
+  transition: 0.3s;
+}
+
+.sideNav a{
+	color: #838383;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.sideNav a:hover{
+	color: white;
+	transition: 0.3s;
+}
+
+.sideTopic{
+	font-size: 20px;
+	text-align: center;
+	color: #838383;
+	height: 70px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.sideTopic:hover{
+  background-color: #D0011B;
+  color: white;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+/* Move user entries here for both */
+
+
+/* Note flex-wrap is nowrap for default. Consider using flex-direction only. */
+
+
+/*All children classes for entries here*/
+
+
+/*Use flex on votes*/
+/*align-self:center;
+  remove margins and display: inline-block;
+*/
+/*Add down arrow. */
+
+/*add popularTopics and children classes here*/
+#popularTopics{
+	border: 2px solid #D0011B;
+	border-left: 0;
+	width: 30%;
+	display: inline-block;
+	margin-bottom: 70px;
+}
+
+#popularTopics h1{
+	font-size: 25px;
+	color: white;
+	background-color: #838383;
+	height: 50px;
+	margin-top: 0;
+	padding-top: 17px;
+	text-align: center;
+}
+
+.arrowLeft{
+  width: 15%;
+  margin-left: 5%;
+}
+
+.arrowLeft img{
+	width: 20px;
+	height: 24px;
+}
+
+.topicRight{
+  text-align: left;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+/*Move common media query styles here*/
+@media only screen and (max-width: 820px){
+  #popularTopics{
+    display: none;
+  }
+
+  .sideNav{
+  	top: 190px;
+  }
+
+  #mostRecent, #allTopics{
+  	width: 100%;
+  }
+
+  #mostRecent h1, #allTopics h1{
+  	margin-bottom: 0;
+  }
+
+  #mostRecent h4{
+	  display: block;
+	  text-align: center;
+	  margin-bottom: 35px;
+  }
+
+  #mostRecent h4 a{
+		color: #A60015;
+		transition: 0.3s;
+	  text-decoration: none;
+	}
+
+	#mostRecent h4 a:hover{
+		color: #838383;
+		font-size: 15.5px;
+		transition: 0.3s;
+		transition-timing-function: ease;
+	  text-decoration: none;
+	}
+
+  #topButton{
+  	display: block;
+  	margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 630px){
+  .sort{
+  	display: none;
+  }
+
+  #mostRecent h1, #allTopics h1{
+    margin-top: 30px;
+  }
+
+  .sideNav{
+  	z-index: 2;
+  }
+
+  .smallerSort{
+  	display: block;
+		background-color: #D0011B;
+		color: white;
+		width: 50px;
+		height: 40px;
+		box-sizing: content-box;
+		text-align: left;
+		font-size: 25px;
+		padding-top: 10px;
+		position: absolute;
+		transition: 0.2s;
+		z-index: 1;
+  }
+
+  #sortOverlay{
+  	margin-left: 17px;
+  	transition: 0.2s;
+  }
+
+  .hover:hover .smallerSort{
+		/*padding-left: 54px;*/
+		width: 29px;
+		text-align: left;
+		transition: 0.2s;
+		transition-timing-function: ease;
+  }
+
+  .hover:hover #sortOverlay{
+  	margin-left: 12px;
+  	transition: 0.2s;
+  }
+
+  .smallSortAnim{
+  	width: 0;
+  	height: 40px;
+  	background-color: #D0011B;
+		color: white;
+		text-align: center;
+		font-size: 25px;
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 5px;
+		position: absolute;
+    z-index: 0;
+		transition: 0.3s;
+		opacity: 0;
+  }
+
+  .hover:hover .smallSortAnim{
+  	width: 67px;
+  	padding-right: 3px;
+  	opacity: 1;
+  	transition: 0.3s;
+  }
+}
+
+/*FUTURE: CSS for mobile first breakpoints go from min and above -- its ok since the designs were desktop first.*/
+
+/*Consider having a flexbox container class. use it every where write it ONCE!*/
+/*example: .column-container all direct children will be flexbox items no matter what the class is.
