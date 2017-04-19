@@ -28,14 +28,26 @@ function closeOverlay(){
 // Expand Function
 
 //When click on topic, expand topic
-function expand() {
+// function expand() {
  /*   var exp = document.querySelectorAll(".topic");
     var i;
     for (i = 0; i < exp.length; i++) {
         exp[i].style.height = "500px";
     }*/
-    console.log(this);
-}
+//     console.log(this);
+// }
+
+//ATTEMPT
+// var classname = document.getElementsByClassName("topic");
+
+// var myFunction = function expand() {
+//     var attribute = this.getAttribute("data-myattribute");
+//     alert(attribute);
+// };
+
+// for (var i = 0; i < classname.length; i++) {
+//     classname[i].addEventListener('click', myFunction, false);
+// }
 
 //Have a function where if div topic is clicked on it changes class name to another SPECIFIC name
 
