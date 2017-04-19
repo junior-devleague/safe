@@ -3,7 +3,6 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Lato', sans-serif;
 */
-
 header{
 	font-family: 'Orbitron', sans-serif;
 	font-size: 40px;
@@ -61,23 +60,10 @@ body{
 	display: flex;
 }
 
-/*Most Recent, left side of home page*/
+/* Most Recent, left side of home page */
 
 #mostRecent{
-	border: 2px solid #D0011B;
-	width: 69%;
 	display: inline-block;
-	background-color: #EDEDED;
-  margin-bottom: 70px;
-}
-
-#mostRecent h1{
-  text-align: center;
-  font-size: 25px;
-  color: #D0011B;
-  margin-bottom: 50px;
-  width: 100%;
-  display: inline-block;
 }
 
 #mostRecent h4{
@@ -171,6 +157,8 @@ body{
 	transition: 0.3s;
 }
 
+=======
+>>>>>>> master
 .topic{
 	border: 2px solid #838383;
 	margin-left: auto;
@@ -270,6 +258,7 @@ body{
 /*Popular Topics, right side of screen*/
 
 #popularTopics{
+<<<<<<< HEAD
 	border: 2px solid #D0011B;
 	border-left: 0;
 	width: 30%;
@@ -288,6 +277,8 @@ body{
 }
 
 #popularTopics h4{
+=======
+>>>>>>> master
   text-align: center;
 }
 
@@ -303,6 +294,7 @@ body{
 	transition: 0.3s;
 	transition-timing-function: ease;
   text-decoration: none;
+
 }
 
 .sideTopic{
@@ -338,7 +330,6 @@ body{
 .arrowLeft{
   width: 15%;
   margin-left: 5%;
->>>>>>> master
 }
 
 .arrowLeft img{
