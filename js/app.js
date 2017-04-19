@@ -48,9 +48,17 @@ function replaceButton(id){
 
 /*Vote System*/
 
+
 /*Most Likes go on top of div (Either shifts on top/ fade in fade out)*/
-/*When up arrow clicks add plus one,
+
+
+
+/*When up arrow clicks add plus one to the number above the arrow,
  it compare which one is the highest number*/
+/* The counter of likes starts at 0 and add +1.
+	target the Id and change the innerHTML with the inn
+
+
 /*When down arrow clicks add plus one,
  check if its equal to the number of downvote
   then fade out if it exceed the number*/
@@ -62,7 +70,7 @@ var likes = 0;
 var dislike = 0;
 function increaseLikes(z){
   likes++;
-  document.getElementById(z).innerHTML = document.getElementById(z).innerHTML + likes
+  document.getElementById(z).innerHTML = "+" + likes
 }
 
 function increaseDownVote(y){

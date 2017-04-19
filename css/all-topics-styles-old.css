@@ -14,10 +14,9 @@ header{
 	margin-top: 40px;
 }
 
-#saySomething{
+#home{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-  display: block;
 	width: 190px;
 	height: 30px;
 	background-color: #838383;
@@ -30,25 +29,25 @@ header{
 	bottom: 35px;
 	transition: 0.3s;
 	transition-timing-function: ease-in;
-  text-decoration: none;
 }
 
-#saySomething:hover{
+#home:hover{
 	background-color: #EDEDED;
 	color: #838383;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
-  text-decoration: none;
 }
 
-#saySomething div{
+#home a{
 	color: white;
 	transition: 0.3s;
+	text-decoration: none;
 }
 
-#saySomething div:hover{
+#home a:hover{
 	color: #838383;
 	transition: 0.3s;
+	text-decoration: none;
 }
 
 body{
@@ -61,27 +60,23 @@ body{
 	display: flex;
 }
 
-/*Most Recent, left side of home page*/
+/* All Topics, left side of home page */
 
-#mostRecent{
+#allTopics{
 	border: 2px solid #D0011B;
 	width: 69%;
-	display: inline-block;
+	padding-bottom: 100px;
+	margin-bottom: 60px; 
 	background-color: #EDEDED;
-  margin-bottom: 70px;
 }
 
-#mostRecent h1{
+#allTopics h1{
   text-align: center;
   font-size: 25px;
   color: #D0011B;
   margin-bottom: 50px;
   width: 100%;
   display: inline-block;
-}
-
-#mostRecent h4{
-	display: none;
 }
 
 .sort{
@@ -92,8 +87,11 @@ body{
 	text-align: center;
 	font-size: 25px;
 	padding-top: 10px;
-	position: absolute;
+	/*position: absolute;*/
 	transition: 0.2s;
+	/*Added for dropdown menu for sort*/
+	display: inline-block;
+	position: relative;
 }
 
 .sort:hover{
@@ -170,128 +168,52 @@ body{
 	transition: 0.3s;
 }
 
-.topic{
-	border: 2px solid #838383;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	/*padding-left: 60px;
-	padding-top: 20px;*/
-	height: 140px;
-	width: 90%;
-	background-color: white;
-	font-size: 13px;
-	color: #8D8D8D;
+.centerTopics{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-flow: row nowrap;
-	-ms-flex-flow: row nowrap;
-	flex-flow: row nowrap;
-	transition: 0.2s;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	padding-right: 15px;
+}
+
+.topic{
+	width: 40%;
+	height: 40px;
+	background-color: white;
+	text-align: center;
+	color: #838383;
+	font-size: 20px;
+	border: 2px solid #838383;
+	transition: 0.3s;
+	transition-timing-function: ease;
+	padding: 1em;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 }
 
 .topic:hover{
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	transform: scale(1.03, 1.03);
-	transition: 0.2s;
+	color: white;
+	background-color: #D0011B;
+	transition: 0.4s;
 	transition-timing-function: ease;
+	-webkit-transform: scale(0.99, 0.99);
+	-ms-transform: scale(0.99, 0.99);
+	transform: scale(0.99, 0.99);
 }
 
-.allInfo{
-	height: 100%;
-	width: 85%;
-	margin-right: auto;
-	display: inline-block;
+.amount{
+	font-size: 15px;
 }
 
-.description{
-  margin-left: 60px;
-  margin-top: 20px;
-  width: 77%;
-  height: 90px;
-  display: block;
-  overflow-y: auto;
-}
-
-.titleBigger{
-	font-size: 17px;
-	color: #838383;
-}
-
-.bottomInfo{
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-flow: row nowrap;
-	-ms-flex-flow: row nowrap;
-	flex-flow: row nowrap;
-	width: 77%;
-	height: 20px;
-  margin-top: 10px;
-	margin-left: 60px;
-}
-
-.date{
-	display: block;
-	/*margin-top: 37px;
-	margin-left: 60px;*/
-	width: 110px;
-}
-
-.comments{
-	display: block;
-	width: 110px;
-	margin-left: auto;
-}
-
-.votes{
-  width: 70px;
-  height: 70px;
-  margin-top: 30px;
-  margin-right: 40px;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.voteUpArrow{
-	width: 35px;
-  height: 35px;
-  font-size: 40px;
-}
-
-.voteDownArrow{
-	width: 35px;
-  height: 35px;
-  font-size: 40px;
-}
-
-.upArrow{
-  width: 35px;
-  height: 35px;
-}
-
-.downArrow{
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  width: 35px;
-  height: 35px;
-}
-.voteCounter{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-/*.voteUpArrow{
-	display: flex;
-	flex-direction: row;
-}
-.voteDownArrow{
-	display: flex;
-	flex-direction: row;
-}*/
 /*Popular Topics, right side of screen*/
 
 #popularTopics{
@@ -299,7 +221,7 @@ body{
 	border-left: 0;
 	width: 30%;
 	display: inline-block;
-  margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 
 #popularTopics h1{
@@ -310,24 +232,6 @@ body{
 	margin-top: 0;
 	padding-top: 17px;
 	text-align: center;
-}
-
-#popularTopics h4{
-  text-align: center;
-}
-
-#popularTopics h4 a{
-	color: #D0011B;
-	transition: 0.3s;
-  text-decoration: none;
-}
-
-#popularTopics h4 a:hover{
-	color: #838383;
-	font-size: 15.5px;
-	transition: 0.3s;
-	transition-timing-function: ease;
-  text-decoration: none;
 }
 
 .sideTopic{
@@ -342,7 +246,7 @@ body{
 	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	-webkit-justify-content: center;
-	-ms-flex-pack: center;
+  -ms-flex-pack: center;
 	justify-content: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -383,36 +287,15 @@ body{
   	top: 190px;
   }
 
-  #mostRecent{
+  #allTopics{
   	width: 100%;
   }
 
-  #mostRecent h1{
+  #allTopics h1{
   	margin-top: 10px;
-	  margin-bottom: 2px;
   }
 
-  #mostRecent h4{
-	  display: block;
-	  text-align: center;
-	  margin-bottom: 40px;
-  }
-
-  #mostRecent h4 a{
-		color: #A60015;
-		transition: 0.3s;
-	  text-decoration: none;
-	}
-
-	#mostRecent h4 a:hover{
-		color: #838383;
-		font-size: 15.5px;
-		transition: 0.3s;
-		transition-timing-function: ease;
-	  text-decoration: none;
-	}
-
-  #saySomething{
+  #home{
   	display: block;
   	margin-left: auto;
     margin-right: auto;
@@ -423,6 +306,10 @@ body{
 @media only screen and (max-width: 630px){
   .sort{
   	display: none;
+  }
+
+  #allTopics h1{
+    margin-bottom: 30px;
   }
 
   .sideNav{
@@ -484,4 +371,42 @@ body{
   	opacity: 1;
   	transition: 0.3s;
   }
+}
+
+/*Dropdown Sort Menu*/
+
+#sortOverlay{
+	background-color: #D0011B;
+    color: white;
+    width: 140px;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.sort:hover{
+	/*background-color: #E1011B;*/
+}
+.dropdown-content{
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.dropdown-content a{
+	color: #838383;
+	padding: 10px 12px;
+	text-decoration: none;
+	display: block;
+
+}
+.dropdown-content a:hover{
+	background-color: #EDEDED;
+}
+.showSort{
+	display: block;
 }
