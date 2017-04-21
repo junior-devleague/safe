@@ -37,7 +37,7 @@ function closeOverlay(){
 //     console.log(this);
 // }
 
-//ATTEMPT
+//NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
 /*var classname = document.getElementsByClassName("topic");*/
 var commentClass = document.getElementsByClassName("comments");
 console.log(commentClass);
