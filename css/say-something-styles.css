@@ -117,7 +117,7 @@ header{
 	position: absolute;
 	transform: translateY(-2em);
 	z-index: -1;
-	transition: all 0.8s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 
 }
 .dropdown-content div{
@@ -130,7 +130,7 @@ header{
 .dropdown-content div:hover{
 	background-color: #838383;
 	color: #EDEDED;
-	width: 368px;
+	width: 379px;
 	border-radius: 4px;
 	cursor: default;
 }
@@ -141,7 +141,7 @@ header{
 	opacity: 1;
 	z-index: 1;
 	transform: translateY(0%);
-	transition-delay: 0.3s;
+	transition-delay: 0.01s;
 }
 /*.dropdown{
 	width: 400px;

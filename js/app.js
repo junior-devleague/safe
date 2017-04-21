@@ -44,3 +44,14 @@ function replaceButton(id){
     document.getElementById("whatContact").innerHTML = (id);
   }
 }
+
+
+window.onclick = function(event){
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	if (!event.target.matches(".button1")){
+		for (var i = 0; i < dropdowns.length; i++) {
+			dropdowns[i].classList.remove("showTopic");
+			console.log('hello')
+		}
+	}
+}
