@@ -25,19 +25,86 @@ font-family: 'Lato', sans-serif;
 	font-family: 'Raleway', sans-serif;
 	width: 400px;
 	height: 40px;
+	transition: height 0.2s ease-in;
+	
   border: 2px solid #838383;
   color: #838383;
   font-size: 12px;
   resize: none;
+  border-radius: 4px;
+}
+#boxOne:focus{
+	height: 130px;
 }
 
-.dropdown{
+/*//////////////////////////////////////////////*/
+
+.button1 {
+    color: #838383;
+    border: 2px solid #838383;
+    border-radius: 4px;
+    cursor: pointer;
+    /*width: 400px;*/
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    background: url('../images/dropdown-arrow.png') no-repeat right white;
+    background-size: 29px 15px;
+    background-position: 350px 13px;
+}
+.dropdown1{
+	position: relative;
+	display: inline-block;
+	width: 100%
+}
+.dropdown-content{
+/*	display: none;
+	position: absolute;*/
+	background-color: white;
+	/*width: 400px;*/
+	width: 100%;
+	box-shadow: 0px 4px 10px;
+/*	z-index: 1;*/
+	/*///////////////*/
+	visibility: hidden; /* hides sub-menu */
+	opacity: 0;
+	position: absolute;
+	transform: translateY(-2em);
+	z-index: -1;
+	transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+}
+.dropdown-content div{
+	color: #838383;
+	font-size: 12px;
+	height: 20px;
+	width: 400px;
+	padding: 12px 16px;
+}
+.dropdown-content div:hover{
+	background-color: #838383;
+	color: #EDEDED;
+	width: 379px;
+	border-radius: 4px;
+	cursor: default;
+}
+.showTopic{
+	/*display: block;
+	transform: translateY(0%);*/
+	visibility: visible; /* shows sub-menu */
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(0%);
+	transition-delay: 0.01s;
+}
+/*.dropdown{
 	width: 400px;
 	height: 40px;
 	border: 2px solid #838383;
 	overflow: hidden;
 	background: url('../images/dropdown-arrow.png') no-repeat right white;
 	background-size: 29px 15px;
+	border-radius: 4px;
 	background-position: 350px 13px;
 }
 
@@ -52,15 +119,21 @@ font-family: 'Lato', sans-serif;
 
 .dropdown select option{
   color: #838383;
-}
+  width: 420px
+}*/
 
 #boxTwo{
 	font-family: 'Raleway', sans-serif;
 	width: 400px;
-	height: 130px;
+	height: 40px;
 	border: 2px solid #838383;
 	resize: none;
 	color: #838383;
+	border-radius: 4px;
+	transition: height 0.3s ease-in;
+}
+#boxTwo:focus{
+	height: 130px;
 }
 
 #submit{
@@ -199,3 +272,5 @@ font-family: 'Lato', sans-serif;
 		margin-top: 10px;
 	}
 }
+/*///////////////////////////////////////////*/
+

@@ -24,18 +24,34 @@ function closeOverlay(){
 	document.getElementById("sortOverlay").style.border = "0";
 }
 
-//Single Topic View
-// Expand Function
+/* SAY SOMETHING FORM */
 
-//When click on topic, expand topic
-// function expand() {
-//     var exp = document.querySelectorAll(".topic");
-//     var i;
-//     for (i = 0; i < exp.length; i++) {
-//         exp[i].style.height = "500px";
-//     }
-//     console.log(this);
-// }
+function clickDrop(x){
+  if(x == 1){
+    document.getElementById("topicDrop").classList.toggle("showTopic");
+  }else if(x == 2){
+    document.getElementById("contactListDrop").classList.toggle("showTopic");
+  }
+}
+
+function replaceButton(id){
+  if (id == "SCIENCE LAB" || id == "COMPUTER LAB" || id=="CAFETERIA"){
+    document.getElementById("whatTopic").innerHTML = (id);
+  }else if(id == "PRINCIPAL" || id == "COUNSELOR" || id == "MAIN OFFICE" || id == "JANITOR"){
+    document.getElementById("whatContact").innerHTML = (id);
+  }
+}
+
+
+window.onclick = function(event){
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	if (!event.target.matches(".button1")){
+		for (var i = 0; i < dropdowns.length; i++) {
+			dropdowns[i].classList.remove("showTopic");
+			console.log('hello')
+		}
+	}
+}
 
 //NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
 /*var classname = document.getElementsByClassName("topic");*/
@@ -57,42 +73,3 @@ for (var i = 0; i < commentClass.length; i++) {
     false);
     // classname[i].style.height.test.parentElement = "500px";
 }
-
-//Have a function where if div topic is clicked on it changes class name to another SPECIFIC name
-
-//Have another function that would look for that SPECIFIC name and make it the only on that expands to fix the problem of having all of them expand
-
-//function that reverts the topic's div name back to the old name 
-
-
-
-//Click Topic
-
-//Change Height 100% (Click off collapses)
-
-//Unhides description
-
-
-
-
-
-
-
-
-
-/*Turn this code from JQuery to Javascript:
-$(function(){
-    var wrapHeight = $(".product-description .desc-wrap").height();
-    var descHeight = $(".product-description").height();
-    if (wrapHeight <= descHeight) {
-        $(".product-description .desc-fade").hide();
-        $(".product-description .open-link").hide();
-    }
-    
-    $(".product-description .open-link").click(function() {
-        $(this).hide();
-        $(".product-description .desc-fade").hide();
-        $(".product-description").animate({height: wrapHeight}, 1000);
- 
-$ stands for 
- */
