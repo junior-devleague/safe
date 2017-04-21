@@ -1,4 +1,4 @@
-console.log ("Sanity Check");
+// console.log ("Sanity Check");
 
 //SORT OVERLAY
 function openOverlay(x){
@@ -42,14 +42,20 @@ function closeOverlay(){
 var commentClass = document.getElementsByClassName("comments");
 console.log(commentClass);
 
-var myFunction = function expand() {
-    var attribute = this.getAttribute("data-myattribute");
-    alert(attribute);
+var myFunction = function expand(test) {
+  console.log(test);
+  console.log(test.parentElement.parentElement.parentElement.style.height = "500px");
+    // var attribute = this.getAttribute("data-myattribute");
+    // alert(attribute);
 };
 
 for (var i = 0; i < commentClass.length; i++) {
-    commentClass[i].addEventListener('click', function(){}, false);
-    // classname[i].style.height = "500px";
+    commentClass[i].addEventListener('click', function(){
+      console.log(this);
+      myFunction(this);
+    }, 
+    false);
+    // classname[i].style.height.test.parentElement = "500px";
 }
 
 //Have a function where if div topic is clicked on it changes class name to another SPECIFIC name
