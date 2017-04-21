@@ -1,4 +1,4 @@
-console.log ("Sanity Check");
+// console.log ("Sanity Check");
 
 //SORT OVERLAY
 function openOverlay(x){
@@ -23,9 +23,6 @@ function closeOverlay(){
 	document.getElementById("sortOverlay").style.width = "0";
 	document.getElementById("sortOverlay").style.border = "0";
 }
-
-
-
 
 /* SAY SOMETHING FORM */
 
@@ -54,4 +51,25 @@ window.onclick = function(event){
 			console.log('hello')
 		}
 	}
+}
+
+//NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
+/*var classname = document.getElementsByClassName("topic");*/
+var commentClass = document.getElementsByClassName("comments");
+console.log(commentClass);
+
+var myFunction = function expand(test) {
+  console.log(test);
+  console.log(test.parentElement.parentElement.parentElement.style.height = "500px");
+    // var attribute = this.getAttribute("data-myattribute");
+    // alert(attribute);
+};
+
+for (var i = 0; i < commentClass.length; i++) {
+    commentClass[i].addEventListener('click', function(){
+      console.log(this);
+      myFunction(this);
+    }, 
+    false);
+    // classname[i].style.height.test.parentElement = "500px";
 }
