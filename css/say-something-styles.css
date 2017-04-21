@@ -91,7 +91,7 @@ header{
     border-radius: 4px;
     cursor: pointer;
     /*width: 400px;*/
-    width: 95%;
+    width: 100%;
     height: 40px;
     text-align: left;
     background: url('../images/dropdown-arrow.png') no-repeat right white;
@@ -108,7 +108,7 @@ header{
 	position: absolute;*/
 	background-color: white;
 	/*width: 400px;*/
-	width: 95%;
+	width: 100%;
 	box-shadow: 0px 4px 10px;
 /*	z-index: 1;*/
 	/*///////////////*/
