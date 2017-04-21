@@ -6,7 +6,7 @@ font-family: 'Lato', sans-serif;
 
 .container{
 	display: -webkit-flex;
-	display: -ms-flexbox;
+	display: -ms-flex;
 	display: flex;
 }
 
@@ -27,13 +27,13 @@ font-family: 'Lato', sans-serif;
 	margin-bottom: 20px;
 	/*padding-left: 60px;
 	padding-top: 20px;*/
-	height: 140px;
-	width: 90%;
+/*	height: 140px;
+*/	width: 90%;
 	background-color: white;
 	font-size: 13px;
 	color: #8D8D8D;
 	display: -webkit-flex;
-	display: -ms-flexbox;
+	display: -ms-flex;
 	display: flex;
 	-webkit-flex-flow: row nowrap;
 	-ms-flex-flow: row nowrap;
@@ -72,7 +72,7 @@ font-family: 'Lato', sans-serif;
 
 .bottomInfo{
 	display: -webkit-flex;
-	display: -ms-flexbox;
+	display: -ms-flex;
 	display: flex;
 	-webkit-flex-flow: row nowrap;
 	-ms-flex-flow: row nowrap;
