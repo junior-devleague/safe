@@ -50,3 +50,12 @@ Event listener has made slight progress, still opens all divs upon click; pseudo
 Christian: Refine pseudo code, finish counters, add number of votes above up & down arrow
 Zedrick, Jomari, and Zak: Troubleshoot/debug event listener errors upon click
 Talon: Fix local CSS merge conflicts, continue work on styling and animations for voting system
+
+4/21/17
+
+Scrum Meeting #6:
+Talon fixed merged conflicts, voting styles have been started on will continue progress; pseudo code finalized, HTML for voting system refined with flexbox and styles. Expand topic with eventListener is now functional and in stages of finalization. The say something form  custom dropdown is finishe, localStorage will be added to the form.
+
+Zedrick and Jomari: Expanding comments box upon click of topic
+Christian and Zak: Fix voting flexbox and work on implementing localStorage
+Talon: Voting system styles and animation when upvoting/downvoting
