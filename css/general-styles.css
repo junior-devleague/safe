@@ -90,6 +90,11 @@ body{
 	padding-bottom: 4px;
 	transition: 0.3s;
 	transition-timing-function: ease;
+  width: 140px !important;
+}
+
+#hoverdiv{
+  width: 140px;
 }
 
 .smallerSort{
