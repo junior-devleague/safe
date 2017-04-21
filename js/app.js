@@ -38,16 +38,18 @@ function closeOverlay(){
 // }
 
 //ATTEMPT
-var classname = document.getElementsByClassName("topic");
+/*var classname = document.getElementsByClassName("topic");*/
+var commentClass = document.getElementsByClassName("comments");
+console.log(commentClass);
 
 var myFunction = function expand() {
     var attribute = this.getAttribute("data-myattribute");
     alert(attribute);
 };
 
-for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', myFunction, false);
-    classname[i].style.height = "500px";
+for (var i = 0; i < commentClass.length; i++) {
+    commentClass[i].addEventListener('click', function(){}, false);
+    // classname[i].style.height = "500px";
 }
 
 //Have a function where if div topic is clicked on it changes class name to another SPECIFIC name
