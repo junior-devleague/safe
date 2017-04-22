@@ -75,5 +75,5 @@ function increaseLikes(z){
 
 function increaseDownVote(y){
   dislike++;
-  document.getElementById(y).innerHTML = document.getElementById(y).innerHTML + dislike
+  document.getElementById(y).innerHTML = "-" + dislike
 }
