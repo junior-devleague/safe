@@ -48,11 +48,12 @@ window.onclick = function(event){
 	if (!event.target.matches(".button1")){
 		for (var i = 0; i < dropdowns.length; i++) {
 			dropdowns[i].classList.remove("showTopic");
-			console.log('hello')
 		}
-	}
+	}else if (event.target.matches("#whatTopic")){
+    dropdowns[1].classList.remove("showTopic");
+  }
 }
-
+console.log(event)
 //NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
 /*var classname = document.getElementsByClassName("topic");*/
 var commentClass = document.getElementsByClassName("comments");
