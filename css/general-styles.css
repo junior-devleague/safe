@@ -90,7 +90,7 @@ body{
 	padding-bottom: 4px;
 	transition: 0.3s;
 	transition-timing-function: ease;
-  width: 140px !important;
+
 }
 
 #hoverdiv{
@@ -100,6 +100,7 @@ body{
 .smallerSort{
 	display: none;
 }
+
 /* Move .closeButton here */
 .closeDiv{
   margin-top: 10px;

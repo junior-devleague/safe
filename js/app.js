@@ -1,11 +1,10 @@
 // console.log ("Sanity Check");
 
-//SORT OVERLAY
+//SORT OVERLAY ~ZAK
 function openOverlay(x){
   document.getElementById("sortOverlay").style.border = "2px solid #838383";
   document.getElementById("sortOverlay").style.width = "250px";
   if(x === 1){
-  	//marginLeft: 0 is for smaller screen widths
   	document.getElementById("sortOverlay").style.marginLeft = "0";
   	var mostRecentHeight = document.getElementById("mostRecent").offsetHeight;
   	document.getElementById("sortOverlay").style.height = mostRecentHeight + "px";
@@ -24,8 +23,7 @@ function closeOverlay(){
 	document.getElementById("sortOverlay").style.border = "0";
 }
 
-/* SAY SOMETHING FORM */
-
+//SAY SOMETHING FORM ~CHRISTIAN
 function clickDrop(x){
   if(x == 1){
     document.getElementById("topicDrop").classList.toggle("showTopic");
@@ -54,18 +52,17 @@ window.onclick = function(event){
 }
 
 //NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
-/*var classname = document.getElementsByClassName("topic");*/
 var commentClass = document.getElementsByClassName("comments");
 console.log(commentClass);
 
-var myFunction = function expand(test) {
+var myFunction = function expand(test){
   console.log(test);
   console.log(test.parentElement.parentElement.parentElement.style.height = "500px");
-    // var attribute = this.getAttribute("data-myattribute");
-    // alert(attribute);
+  // var attribute = this.getAttribute("data-myattribute");
+  // alert(attribute);
 };
 
-for (var i = 0; i < commentClass.length; i++) {
+for(var i = 0; i < commentClass.length; i++){
     commentClass[i].addEventListener('click', function(){
       console.log(this);
       myFunction(this);

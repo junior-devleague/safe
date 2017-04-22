@@ -5,17 +5,16 @@
   <link rel="stylesheet" type="text/css" href="./css/general-styles.css">
   
 	<title>Say Something</title>
-	<header>S.A.F.E.</header>
-	<a href="index.html" id="topButton"><div>HOME</div></a>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Raleway" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <header>S.A.F.E.</header>
+	<a href="index.html" id="topButton"><div>HOME</div></a>
 	<div class="container">
 	  <div class="form">
-
 	  	<p>Pick a topic</p>
-			<div class="dropdown1">
+			<div class="dropdown">
 				<button onclick="clickDrop(1)" class="button1" id="whatTopic">CHOOSE TOPIC BELOW</button>
 				<div id="topicDrop" class="dropdown-content">
 					<div id="SCIENCE LAB" onclick="replaceButton(this.id)">SCIENCE LAB</div>
@@ -26,7 +25,7 @@
 			<br/><br/>
 
 			<p>Should we contact someone about it?</p>
-			<div class="dropdown1">
+			<div class="dropdown">
 				<button onclick="clickDrop(2)" class="button1" id="whatContact">CHOOSE CONTACT</button>
 				<div id="contactListDrop" class="dropdown-content">
 					<div id="PRINCIPAL" onclick="replaceButton(this.id)">PRINCIPAL</div>
@@ -37,46 +36,15 @@
 			</div>
 			<br/><br/>
 
+			What would you like to say?<br/><br/>
+			<textarea type="text" name="userOpinion" cols="50" rows="2" id="boxOne"></textarea>
+			<br/><br/>
 
+			Do you have more you would like to add?<br/><br/>
+			<textarea type="text" name="extraInfo" id="boxTwo"></textarea>
+			<br/><br/>
 
-
-		  <form>
-
-				<!-- redo dropdowns with divs and animate with keyframes for smooth moder look -->
-<!--
- 				Pick a topic<br/><br/>
-				<div class="dropdown">
-					<select>
-						<option>CHOOSE TOPIC BELOW</option>
-						<option value="scienceLab">SCIENCE LAB</option>
-						<option value="computerLab">COMPUTER LAB</option>
-						<option value="cafeteria">CAFETERIA</option>
-					</select>
-				</div>
-				<br/><br/>
-
-				Should we contact someone about it?<br/><br/>
-				<div class="dropdown">
-					<select>
-					  <option>CHOOSE CONTACT</option>
-						<option value="principal">PRINCIPAL</option>
-						<option value="counseler">COUNSELER</option>
-						<option value="mainOffice">MAIN OFFICE</option>
-						<option value="janitor">JANITOR</option>
-					</select>
-				</div>
-				<br/><br/>
- -->
-				What would you like to say?<br/><br/>
-				<textarea type="text" name="userOpinion" cols="50" rows="2" id="boxOne"></textarea>
-				<br/><br/>
-
-				Do you have more you would like to add?<br/><br/>
-				<textarea type="text" name="extraInfo" id="boxTwo"></textarea>
-				<br/><br/>
-
-				<input type="submit" value="SAY SOMETHING" id="submit">
-			</form>
+			<input type="submit" value="SAY SOMETHING" id="submit">
 		</div>
 	</div>
 <script type="text/javascript" src="./js/app.js"></script>
