@@ -33,14 +33,14 @@ function clickDrop(x){
 }
 
 function replaceButton(id){
-  if (id == "SCIENCE LAB" || id == "COMPUTER LAB" || id=="CAFETERIA"){
+  if (id == "SCIENCE LAB" || id == "COMPUTER LAB" || id == "CAFETERIA"){
     document.getElementById("whatTopic").innerHTML = (id);
   }else if(id == "PRINCIPAL" || id == "COUNSELOR" || id == "MAIN OFFICE" || id == "JANITOR"){
     document.getElementById("whatContact").innerHTML = (id);
   }
 }
 
-window.onclick = function(){
+window.onclick = function(event){
 	var dropdowns = document.getElementsByClassName("dropdown-content");
 	if (!event.target.matches(".button")){
 		for (var i = 0; i < dropdowns.length; i++) {
@@ -52,22 +52,64 @@ window.onclick = function(){
 }
 
 //NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
-var commentClass = document.getElementsByClassName("comments");
-//console.log(commentClass);
-
-var myFunction = function(div){ //anonymous function
+/*var expandTopic = function(div){ //anonymous function
   //console.log(div);
   div.parentElement.parentElement.parentElement.style.height = "400px";
   //var attribute = this.getAttribute("data-myattribute");
   //alert(attribute);
+}*/
+
+//REDONE EXPANSION ~ZAK (TOOK FOREVER, BUT BASICALLY TAKES INTO ACCOUNT ALL CLICKS OPENING/CLOSING TOPICS)
+var openCloseTopic = function(commentDiv){
+  var topicDiv =  commentDiv.parentElement.parentElement.parentElement;
+  //console.log(topicDiv);
+  
+  //When user clicks on "view comments", expand div
+  if(event.target == commentDiv){
+    //this closes others div if you click on "view comments" and another div is already open
+    var topicClass = document.getElementsByClassName("topic");
+    console.log(topicClass);
+    for(var i = 0; i < topicClass.length; i++){
+      //console.log(topicClass[i].clientHeight)
+      if(topicClass[i].clientHeight == "400"){
+        //console.log(topicClass[i]);
+        //this keeps only one topic open at all times
+        topicClass[i].style.height = "145px";
+      }
+    }
+
+    //console.log("clicked on comment div");
+    topicDiv.style.height = "400px";
+  }
+  //When the user clicks anywhere outside of the topic, close it
+  else{
+    //checks to see if user is clicking inside topic div
+    console.log(commentDiv)
+    if(topicDiv.contains(event.target) && topicDiv.style.height == "400px"){
+      //console.log("clicked on topic div");
+      topicDiv.style.height = "400px";
+    }
+    else{
+      //console.log("clicked off topic div");
+      topicDiv.style.height = "145px"; 
+    }
+  }
 }
 
+//checks all clicks on window
+var openTopic;
+window.addEventListener("click", function(){
+  openCloseTopic(openTopic); //closeTopic's parameter becomes "this" (the current open div)
+},
+false)
+
+var commentClass = document.getElementsByClassName("comments");
+//console.log(commentClass);
 for(var i = 0; i < commentClass.length; i++){
-  commentClass[i].addEventListener('click', function(){
-    //console.log(this);
-    myFunction(this);
+  commentClass[i].addEventListener("click", function(){
+    openCloseTopic(this);
+    openTopic = this; //makes "this" global
   }, 
   false);
   //classname[i].style.height.test.parentElement = "500px";
 }
-
