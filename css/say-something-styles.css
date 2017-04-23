@@ -19,6 +19,7 @@ font-family: 'Lato', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+	transition: 0.3s;
 }
 
 .button{
@@ -39,7 +40,8 @@ font-family: 'Lato', sans-serif;
 .dropdown{
 	position: relative;
 	display: inline-block;
-	width: 100%
+	width: 100%;
+	transition: 0.5s;
 }
 
 .dropdown-content{
@@ -89,12 +91,13 @@ font-family: 'Lato', sans-serif;
 	font-family: 'Raleway', sans-serif;
 	width: 400px;
 	height: 40px;
-	transition: height 0.2s ease-in;
+	transition: height 0.3s ease-in;
   border: 2px solid #838383;
   color: #838383;
   font-size: 12px;
   resize: none;
   border-radius: 4px;
+  transition: 0.5s;
 }
 
 #boxOne:focus{
@@ -110,6 +113,7 @@ font-family: 'Lato', sans-serif;
 	color: #838383;
 	border-radius: 4px;
 	transition: height 0.3s ease-in;
+  transition: 0.5s;
 }
 #boxTwo:focus{
 	height: 130px;
@@ -145,22 +149,20 @@ font-family: 'Lato', sans-serif;
 
   .form{
 		width: 340px;
+		transition: 0.5s;
   }
 
   .button{
 	  background: url('../images/dropdown-arrow.png') no-repeat right white;
 	  background-size: 29px 15px;
 	  background-position: 95% 11px;
+	  transition: 0.5s;
   }
-
-	#boxOne{
-		width: 330px;
-	  font-size: 12px;
-	}
 
 	.dropdown{
 		width: 330px;
 		font-size: 12px;
+		transition: 0.5s;
 	}
 
 	.dropdown-content div{
@@ -174,15 +176,17 @@ font-family: 'Lato', sans-serif;
 		width: 330px;
   }
 
-	#boxTwo{
-		width: 330px;
-		font-size: 12px;
+	#boxOne, #boxTwo{
+		width: 323px;
+	  font-size: 12px;
+	  transition: 0.5s;
 	}
 
 	#submit{
-		width: 230px;
+		width: 200px;
 		font-size: 12px;
 		margin-top: 10px;
+		transition: 0.5s;
 	}
 }
 
