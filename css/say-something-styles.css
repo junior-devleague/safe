@@ -21,7 +21,7 @@ font-family: 'Lato', sans-serif;
 	text-align: left;
 }
 
-.button1 {
+.button{
   color: #838383;
   border: 2px solid #838383;
   border-radius: 4px;
@@ -32,7 +32,8 @@ font-family: 'Lato', sans-serif;
   text-align: left;
   background: url('../images/dropdown-arrow.png') no-repeat right white;
   background-size: 29px 15px;
-  background-position: 350px 13px;
+  /*background-position: 360px 11px;*/
+  background-position: 95% 11px;
 }
 
 .dropdown{
@@ -61,16 +62,17 @@ font-family: 'Lato', sans-serif;
 	color: #838383;
 	font-size: 12px;
 	height: 20px;
-	width: 400px;
+	width: 380px;
 	padding: 12px 16px;
+	transition: 0.1s;
 }
 
 .dropdown-content div:hover{
 	background-color: #838383;
 	color: #EDEDED;
 	width: 379px;
-	border-radius: 4px;
 	cursor: default;
+	transition: 0.2s;
 }
 
 .showTopic{
@@ -88,7 +90,6 @@ font-family: 'Lato', sans-serif;
 	width: 400px;
 	height: 40px;
 	transition: height 0.2s ease-in;
-	
   border: 2px solid #838383;
   color: #838383;
   font-size: 12px;
@@ -135,7 +136,7 @@ font-family: 'Lato', sans-serif;
 }
 
 /* 420px width is for Nexus 5X/6P and iPhone 6 Plus screens */
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 465px){
 	.container{
 		width: 100%;
 		font-size: 17px;
@@ -144,6 +145,12 @@ font-family: 'Lato', sans-serif;
 
   .form{
 		width: 340px;
+  }
+
+  .button{
+	  background: url('../images/dropdown-arrow.png') no-repeat right white;
+	  background-size: 29px 15px;
+	  background-position: 95% 11px;
   }
 
 	#boxOne{
@@ -156,10 +163,16 @@ font-family: 'Lato', sans-serif;
 		font-size: 12px;
 	}
 
-	.dropdown select{
-		width: 350px;
-	  font-size: 12px;
-	}
+	.dropdown-content div{
+		width: 330px;
+		box-sizing: border-box;
+		height: 44px;
+		padding: 12px 16px;
+  }
+
+  .dropdown-content div:hover{
+		width: 330px;
+  }
 
 	#boxTwo{
 		width: 330px;
@@ -185,6 +198,12 @@ font-family: 'Lato', sans-serif;
 		width: 300px;
   }
 
+  .button{
+	  background: url('../images/dropdown-arrow.png') no-repeat right white;
+	  background-size: 29px 15px;
+	  background-position: 95% 11px;
+  }
+
 	#boxOne{
 		width: 290px;
 	  font-size: 12px;
@@ -193,11 +212,6 @@ font-family: 'Lato', sans-serif;
 	.dropdown{
 		width: 290px;
 		font-size: 12px;
-	}
-
-	.dropdown select{
-		width: 310px;
-	  font-size: 12px;
 	}
 
 	#boxTwo{
@@ -224,6 +238,12 @@ font-family: 'Lato', sans-serif;
 		width: 270px;
   }
 
+  .button{
+	  background: url('../images/dropdown-arrow.png') no-repeat right white;
+	  background-size: 29px 15px;
+	  background-position: 95% 11px;
+  }
+
 	#boxOne{
 		width: 260px;
 	  font-size: 11px;
@@ -232,11 +252,6 @@ font-family: 'Lato', sans-serif;
 	.dropdown{
 		width: 260px;
 		font-size: 11px;
-	}
-
-	.dropdown select{
-		width: 380px;
-	  font-size: 11px;
 	}
 
 	#boxTwo{

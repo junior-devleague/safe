@@ -40,10 +40,9 @@ function replaceButton(id){
   }
 }
 
-
-window.onclick = function(event){
+window.onclick = function(){
 	var dropdowns = document.getElementsByClassName("dropdown-content");
-	if (!event.target.matches(".button1")){
+	if (!event.target.matches(".button")){
 		for (var i = 0; i < dropdowns.length; i++) {
 			dropdowns[i].classList.remove("showTopic");
 		}
@@ -51,23 +50,24 @@ window.onclick = function(event){
     dropdowns[1].classList.remove("showTopic");
   }
 }
-console.log(event)
+
 //NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
 var commentClass = document.getElementsByClassName("comments");
-console.log(commentClass);
+//console.log(commentClass);
 
-var myFunction = function expand(test){
-  console.log(test);
-  console.log(test.parentElement.parentElement.parentElement.style.height = "500px");
-  // var attribute = this.getAttribute("data-myattribute");
-  // alert(attribute);
-};
+var myFunction = function(div){ //anonymous function
+  //console.log(div);
+  div.parentElement.parentElement.parentElement.style.height = "400px";
+  //var attribute = this.getAttribute("data-myattribute");
+  //alert(attribute);
+}
 
 for(var i = 0; i < commentClass.length; i++){
-    commentClass[i].addEventListener('click', function(){
-      console.log(this);
-      myFunction(this);
-    }, 
-    false);
-    // classname[i].style.height.test.parentElement = "500px";
+  commentClass[i].addEventListener('click', function(){
+    //console.log(this);
+    myFunction(this);
+  }, 
+  false);
+  //classname[i].style.height.test.parentElement = "500px";
 }
+

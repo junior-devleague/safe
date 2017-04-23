@@ -104,14 +104,7 @@ font-family: 'Lato', sans-serif;
   display: inline-block;
 }
 
-.upArrow{
-  width: 35px;
-  display: inline-block;
-}
-
-.downArrow{
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
+.upArrow, .downArrow{
   width: 35px;
   display: inline-block;
 }

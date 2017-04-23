@@ -186,13 +186,18 @@ body{
 	align-items: center;
 	transition: 0.3s;
 	transition-timing-function: ease-out;
+	background: url('../images/up-arrow.png') no-repeat left;
+	background-size: 20px 24px;
+  background-position: 21% 18px;
 }
 
 .sideTopic:hover{
-  background-color: #D0011B;
   color: white;
   transition: 0.4s;
   transition-timing-function: ease-out;
+  background: url('../images/white-arrow.png') no-repeat left #D0011B;
+  background-size: 20px 24px;
+  background-position: 21% 18px;
 }
 
 /* Move user entries here for both */
@@ -229,19 +234,10 @@ body{
 	text-align: center;
 }
 
-.arrowLeft{
-  width: 15%;
-  margin-left: 5%;
-}
-
-.arrowLeft img{
-	width: 20px;
-	height: 24px;
-}
-
 .topicRight{
   text-align: left;
   width: 60%;
+  margin-left: 20%;
   margin-bottom: 10px;
 }
 
