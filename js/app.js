@@ -63,35 +63,45 @@ window.onclick = function(event){
 var openCloseTopic = function(commentDiv){
   var topicDiv =  commentDiv.parentElement.parentElement.parentElement;
   //console.log(topicDiv);
-  
+  var currentlyOpenComBox;
+  //diplays comment box at bottom of topic
+  for(var i = 0; i < topicDiv.childNodes.length; i++){
+    //console.log(topicDiv.childNodes[i]);
+    if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+      currentlyOpenComBox = topicDiv.childNodes[i];
+    }
+  }
+
   //When user clicks on "view comments", expand div
   if(event.target == commentDiv){
     //this closes others div if you click on "view comments" and another div is already open
     var topicClass = document.getElementsByClassName("topic");
-    console.log(topicClass);
+    //console.log(topicClass);
     for(var i = 0; i < topicClass.length; i++){
       //console.log(topicClass[i].clientHeight)
-      if(topicClass[i].clientHeight == "400"){
+      if(topicClass[i].clientHeight == "400"){ //if any topic is already open close it
         //console.log(topicClass[i]);
         //this keeps only one topic open at all times
+        currentlyOpenComBox.style.display = "none";
         topicClass[i].style.height = "145px";
       }
     }
 
     //console.log("clicked on comment div");
     topicDiv.style.height = "400px";
+    currentlyOpenComBox.style.display = "block";
   }
   //When the user clicks anywhere outside of the topic, close it
   else{
     //checks to see if user is clicking inside topic div
-    console.log(commentDiv)
-    if(topicDiv.contains(event.target) && topicDiv.style.height == "400px"){
+    if(topicDiv.contains(event.target) && topicDiv.style.height == "400px"){ //this could be put as an else if statement also...
       //console.log("clicked on topic div");
       topicDiv.style.height = "400px";
     }
     else{
       //console.log("clicked off topic div");
-      topicDiv.style.height = "145px"; 
+      topicDiv.style.height = "145px";
+      currentlyOpenComBox.style.display = "none";
     }
   }
 }

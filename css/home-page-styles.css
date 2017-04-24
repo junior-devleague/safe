@@ -40,12 +40,13 @@ font-family: 'Lato', sans-serif;
 	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	transition: 0.2s;
+	position: relative; /* this needs to be on parent to prevent commentBox from going outside div */
 }
 
 .topic:hover{
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.02, 1.02);
+	-ms-transform: scale(1.02, 1.02);
+	transform: scale(1.02, 1.02);
 	transition: 0.2s;
 	transition-timing-function: ease;
 }
@@ -95,7 +96,15 @@ font-family: 'Lato', sans-serif;
 	display: block;
 	width: 110px;
 	margin-left: auto;
+	cursor: pointer;
+	transition: 0.1s;
 }
+
+.comments:hover{
+  color: #D0011B;
+  transition: 0.1s;
+}
+
 
 .votes{
   width: 90px;
@@ -108,6 +117,38 @@ font-family: 'Lato', sans-serif;
 .upArrow, .downArrow{
   width: 35px;
   display: inline-block;
+  transition: 0.2s;
+}
+
+.upArrow:hover, .downArrow:hover{
+	-webkit-transform: scale(0.93, 0.93);
+	-ms-transform: scale(0.93, 0.93);
+	transform: scale(0.93, 0.93);
+	transition: 0.2s;
+	transition-timing-function: ease;
+}
+
+.commentBox{
+	width: 97%;
+	height: 40px;
+	font-size: 13px;
+	padding-left: 30px;
+	padding-top: 10px;
+	border: 2px solid #C4C4C4;
+	box-sizing: border-box;
+  background-color: white;
+	color: #838383;
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	left: 1.5%;
+	resize: none;
+	outline: none; /*gets rid of blue outline*/
+}
+
+.commentBox:focus{
+	background-color: #F2F2F2;
+	border-color: #A0A0A0;
 }
 
 /*Popular Topics, right side of screen*/
