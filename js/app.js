@@ -53,10 +53,12 @@ function replaceButton(id){
 
 
 
-/*When up arrow clicks add plus one to the number above the arrow,
- it compare which one is the highest number*/
-/* The counter of likes starts at 0 and add +1.
-	target the Id and change the innerHTML with the inn
+/*When up arrow clicks add plus one to the number above the arrow img,
+it compare number and change position
+the image then becomes unclickable/locks.
+The counter of likes starts at 0 and add +1.
+target the Id and change the innerHTML.*/
+
 
 
 /*When down arrow clicks add plus one,
@@ -68,12 +70,41 @@ function replaceButton(id){
 */
 var likes = 0;
 var dislike = 0;
-function increaseLikes(z){
+var clicks = 0;
+
+
+function voteUpPost(){
+  var upArrow = document.getElementsByClassName("upArrow");
+  var downArrow = document.getElementsByClassName("downArrow");
   likes++;
-  document.getElementById(z).innerHTML = "+" + likes
+  clicks++;
+  if(clicks == 1){
+    document.getElementById("u1").innerHTML = likes
+    upArrow[0].style.pointerEvents = 'none'
+  }else if(clicks == 2){
+    document.getElementById("u1").innerHTML = likes
+    dislike--;
+    document.getElementById("d1").innerHTML = dislike
+    upArrow[0].style.pointerEvents = 'none'
+    downArrow[0].style.pointerEvents = 'auto'
+    clicks = 1;
+  }
 }
 
-function increaseDownVote(y){
+function voteDownPost(){
+  var upArrow = document.getElementsByClassName("upArrow");
+  var downArrow = document.getElementsByClassName("downArrow");
   dislike++;
-  document.getElementById(y).innerHTML = "-" + dislike
+  clicks++;
+  if(clicks == 1){
+    document.getElementById("d1").innerHTML = dislike
+    downArrow[0].style.pointerEvents = 'none'
+  }else if(clicks == 2){
+    document.getElementById("d1").innerHTML = dislike
+    likes--;
+    document.getElementById("u1").innerHTML = likes
+    downArrow[0].style.pointerEvents = 'none'
+    upArrow[0].style.pointerEvents = 'auto'
+    clicks = 1;
+  }
 }

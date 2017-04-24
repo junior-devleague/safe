@@ -246,36 +246,49 @@ body{
 	margin-left: auto;
 }
 
+.containerVote{
+	display: flex;
+	flex-direction: column;
+}
+.voteSign{
+	width: 80px;
+	height: 35px;
+	margin-top: 30px;
+	margin-right: 40px;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
 .votes{
-  width: 70px;
-  height: 70px;
-  margin-top: 30px;
+  width: 80px;
+  height: 35px;
+  margin-top: 20px;
   margin-right: 40px;
   margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .voteUpArrow{
 	width: 35px;
   height: 35px;
-  font-size: 40px;
+  margin-right: 20px;
+  font-size: 30px;
 }
 
 .voteDownArrow{
 	width: 35px;
   height: 35px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .upArrow{
   width: 35px;
   height: 35px;
+  margin-right: 20px;
 }
 
 .downArrow{
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
   width: 35px;
   height: 35px;
 }
@@ -418,6 +431,9 @@ body{
     margin-right: auto;
     margin-top: 70px;
   }
+
+
+
 }
 
 @media only screen and (max-width: 630px){
