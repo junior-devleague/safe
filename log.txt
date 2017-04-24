@@ -59,3 +59,12 @@ Talon fixed merged conflicts, voting styles have been started on will continue p
 Zedrick and Jomari: Expanding comments box upon click of topic
 Christian and Zak: Fix voting flexbox and work on implementing localStorage
 Talon: Voting system styles and animation when upvoting/downvoting
+
+4/24/17
+
+Scrum Meeting #7:
+Mock data is almost done, and voting styles still need to be started; fixed small SORT button bug. Researched collapsing of topc, finished the basis of voting code, still need to inplement to other topics. Topic expansion and closing was complete with event listeners etc. Local storage still needs to be worked on.
+
+Zedrick and Jonmari: Showing other users comments when topic expands
+Christian and Talon: Fix voting styles and flexbox, implement the voting system to other topics
+Zak: Start researching and adding local storage to form
