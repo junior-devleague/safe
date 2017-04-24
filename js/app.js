@@ -60,15 +60,18 @@ window.onclick = function(event){
 }*/
 
 //REDONE EXPANSION ~ZAK (TOOK FOREVER, BUT BASICALLY TAKES INTO ACCOUNT ALL CLICKS OPENING/CLOSING TOPICS)
+var currentlyOpenComBox;
 var openCloseTopic = function(commentDiv){
   var topicDiv =  commentDiv.parentElement.parentElement.parentElement;
   //console.log(topicDiv);
-  var currentlyOpenComBox;
+
   //diplays comment box at bottom of topic
-  for(var i = 0; i < topicDiv.childNodes.length; i++){
-    //console.log(topicDiv.childNodes[i]);
-    if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
-      currentlyOpenComBox = topicDiv.childNodes[i];
+  if(currentlyOpenComBox == null){
+    for(var i = 0; i < topicDiv.childNodes.length; i++){
+      //console.log(topicDiv.childNodes[i]);
+      if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+        currentlyOpenComBox = topicDiv.childNodes[i];
+      }
     }
   }
 
@@ -84,6 +87,13 @@ var openCloseTopic = function(commentDiv){
         //this keeps only one topic open at all times
         currentlyOpenComBox.style.display = "none";
         topicClass[i].style.height = "145px";
+      }
+    }
+
+    for(var i = 0; i < topicDiv.childNodes.length; i++){
+      //console.log(topicDiv.childNodes[i]);
+      if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+        currentlyOpenComBox = topicDiv.childNodes[i];
       }
     }
 
