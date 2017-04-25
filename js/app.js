@@ -96,3 +96,19 @@ $(function(){
  
 $ stands for 
  */
+
+var mockDataTitles = [
+  "Better Bathrooms",
+  "Pot Holes in the Parking Lot",
+  "Grass needs to be greener",
+  "Water Fountains are NASTYYYY"
+]
+
+
+ var mockData = [
+  "Bathrooms suck, better ones are needed. Toilets flush only 40% of the time and if your lucky the stall you're in might have toilet paper",
+  "The parking lots need to be paved pot holes are getting really big and I ain't about to destroy my rims or pop a tire while I'm trying to park",
+  "They need to start adding more grass to campus and take better care of the grass that we do have"
+
+
+ ]
