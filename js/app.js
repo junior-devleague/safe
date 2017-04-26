@@ -78,7 +78,7 @@ var openCloseTopic = function(commentDiv){
   //When user clicks on "view comments", expand div
   if(event.target == commentDiv){
     //this closes others div if you click on "view comments" and another div is already open
-    var topicClass = document.getElementsByClassName("topic");
+    var topicClass = document.getElementsByClassName("topic, userCom");
     //console.log(topicClass);
     for(var i = 0; i < topicClass.length; i++){
       //console.log(topicClass[i].clientHeight)
