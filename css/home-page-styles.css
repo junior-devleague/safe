@@ -170,3 +170,9 @@ font-family: 'Lato', sans-serif;
 	transition-timing-function: ease;
   text-decoration: none;
 }
+
+/*Comment Section*/
+
+.userCom{
+  z-index: 1;
+}
