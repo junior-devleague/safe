@@ -176,3 +176,9 @@ font-family: 'Lato', sans-serif;
 .userCom{
   z-index: 1;
 }
+
+.userCom{
+  width: 150px;
+  height: 10%;
+  border: 2px solid #C4C4C4;
+}
