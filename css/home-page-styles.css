@@ -112,6 +112,7 @@ font-family: 'Lato', sans-serif;
   margin-right: 10px;
   margin-left: auto;
   display: inline-block;
+  height: 100px;
 }
 
 .upArrow, .downArrow{
@@ -129,6 +130,12 @@ font-family: 'Lato', sans-serif;
 }
 
 .commentBox{
+  display: none;
+  width: 97%;
+  height: 230px;
+}
+
+.addComment{
 	width: 97%;
 	height: 40px;
 	font-size: 13px;
@@ -138,7 +145,6 @@ font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
   background-color: white;
 	color: #838383;
-	display: none;
 	position: absolute;
 	bottom: 10px;
 	left: 1.5%;
@@ -146,9 +152,19 @@ font-family: 'Lato', sans-serif;
 	outline: none; /*gets rid of blue outline*/
 }
 
-.commentBox:focus{
+.addComment:focus{
 	background-color: #F2F2F2;
 	border-color: #A0A0A0;
+}
+
+/*Comment Section*/
+.userCom{
+  margin-left: 12px;
+  border: 2px solid;
+  padding-left: 30px;
+  width: 109%;
+  height: 60px;
+  margin-top: 5px;
 }
 
 /*Popular Topics, right side of screen*/
@@ -169,16 +185,4 @@ font-family: 'Lato', sans-serif;
 	transition: 0.3s;
 	transition-timing-function: ease;
   text-decoration: none;
-}
-
-/*Comment Section*/
-
-.userCom{
-  z-index: 1;
-}
-
-.userCom{
-  width: 150px;
-  height: 10%;
-  border: 2px solid #C4C4C4;
 }
