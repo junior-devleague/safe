@@ -97,18 +97,167 @@ $(function(){
 $ stands for 
  */
 
-var mockDataTitles = [
-  "Better Bathrooms",
-  "Pot Holes in the Parking Lot",
-  "Grass needs to be greener",
-  "Water Fountains are NASTYYYY"
-]
+var mockData = [
+  {topic: "Cafeteria",
+  entries:[
+    {
+      title: "Better Lunches",
+      description: "lorem impsum",
+      date: "Feb 4th, 2017", 
+      comments:
+      {
+        comment1: "lorem impsum",
+        comment2: "lorem impsum",
+        comment3: "lorem impsum";
+      }
+    },
+
+    {
+      title:
+      description:
+      date:
+      comments:
+      {
+        comment1:
+        comment2:
+        comment3:
+      }
+    },
+
+    {
+      title:
+      description:
+      date:
+      comments:
+      {
+        comment1:
+        comment2:
+      }
+    }
+  }
+],
+
+  {topic: "Music Room",
+  entries:[
+    {
+      title: ""
+      description: "lorem impsum",
+      date: "Feb 9th, 2017",
+      comments:
+      {
+        comment1: "lorem impsum",
+        comment2: "lorem impsum";
+      }
+    },
+
+    {
+      title:
+      description:
+      date:
+      comments:
+      {
+        comment1:
+      }
+    }, 
+
+    {
+      title:
+      description:
+      date:
+      comments:
+      {
+        comment1:
+        comment2:
+        comment3:
+      }
+    }
+  }
+],
+
+  {topic: "Gym"
+entries:[
+  
 
 
- var mockData = [
-  "Bathrooms suck, better ones are needed. Toilets flush only 40% of the time and if your lucky the stall you're in might have toilet paper",
-  "The parking lots need to be paved pot holes are getting really big and I ain't about to destroy my rims or pop a tire while I'm trying to park",
-  "They need to start adding more grass to campus and take better care of the grass that we do have"
+]}
+
+  {topic: "track and field"
+  entries: [
 
 
- ]
+  
+]}
+
+
+  {topic: "computer lab"
+  entries:[
+
+
+
+]}
+
+
+  {topic: "science lab"
+  entries: [
+
+
+]}
+
+
+  {topic: "library"
+  entries:[
+
+
+
+]}
+
+
+  {topic: "main office"
+  entries:[
+
+
+]}
+
+
+
+  {topic: "Parking Lot",
+  entries:[
+      {
+        title: "Pot Holes in the Parking Lot",
+        description: "lorem impsum",
+        date: "Mar 17th, 2017",
+        comments:
+        {
+          comment1: "lorem impsum",
+          comment2: "lorem impsum",
+          comment3: "lorem impsum",
+          comment4: "lorem impsum";
+        }
+      },
+
+      {
+        title:
+        description:
+        date:
+        comments:
+        {
+          comment1:
+          comment2:
+          comment3:
+          comment4:
+        }
+      },
+
+      {
+        title:
+        description:
+        date:
+        comments:
+        {
+          comment1:
+          comment2:
+        }
+      }
+    }
+  ]
+
