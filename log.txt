@@ -78,3 +78,12 @@ Talon: Refining the mock data, starting on fading div
 Christian: Finish addEventListener to the voting system
 Zedrick and Jomari: Research localStorage and start on comment box
 Zak: Give help where help is needed
+
+4/28/17
+
+Scrum Meetng #9:
+Mock data was completed, ready to merge with master; transition to make topic dissapear will be started on today. Further progress on turning voting system to a more dynamic flow with event listeners and without classes and id's. Started on comment section, having problems arrangin divs in a proper order.
+
+Talon: Making topic dissapear (animation / transition)
+Christian and Zak: Voting system, revuilding structure to be more dynamic
+Zedrick and Jomari: Comment box layout and incorporating with JavaScript
