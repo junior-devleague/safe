@@ -68,43 +68,54 @@ target the Id and change the innerHTML.*/
 /*Problems may occur:
     one like/dislike per computer
 */
-var likes = 0;
 var dislike = 0;
-var clicks = 0;
+var likes = 1;
 
-
-function voteUpPost(){
-  var upArrow = document.getElementsByClassName("upArrow");
-  var downArrow = document.getElementsByClassName("downArrow");
-  likes++;
+for (var i = 0; i <= document.getElementsByClassName("numberUp").length - 1; i++) {
+  document.getElementsByClassName("numberUp")[i].addEventListener("click", function(){voteUpPost(this)},{once:true})
+  document.getElementsByClassName("numberDown")[i].addEventListener("click", function(){voteUpPost(this)},{once:true})
+  console.log(i)
+}
+//MAKE ONE FUNCTION
+// If img clicked remove event listener
+  var clicks = 0;
+function voteUpPost(z){
+  var idOfSpanUp = z.previousSibling.previousSibling.firstChild.nextSibling;
+  // var idOfSpanDown = z.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.lastChild
+  // var imgDownArrow = z.parentElement.parentElement.lastChild.previousSibling.lastChild.previousSibling
+  var imgUpArrow = z
   clicks++;
-  if(clicks == 1){
-    document.getElementById("u1").innerHTML = likes
-    upArrow[0].style.pointerEvents = 'none'
-  }else if(clicks == 2){
-    document.getElementById("u1").innerHTML = likes
-    dislike--;
-    document.getElementById("d1").innerHTML = dislike
-    upArrow[0].style.pointerEvents = 'none'
-    downArrow[0].style.pointerEvents = 'auto'
-    clicks = 1;
-  }
+  console.log(z.parentElement.getElementsByTagName('IMG')[0])
+  console.log(z)
+    idOfSpanUp.innerHTML = +idOfSpanUp.innerHTML + 1
+    // console.log
+    // idOfSpanUp.innerHTML = +idOfSpanUp.innerHTML + 1
+    // idOfSpanDown.innerHTML = +idOfSpanDown.innerHTML - 1
+    // imgDownArrow.addEventListener("click",function(){voteDownPost(this)},{once:true})
+    // clicks = 1
 }
 
-function voteDownPost(){
-  var upArrow = document.getElementsByClassName("upArrow");
-  var downArrow = document.getElementsByClassName("downArrow");
-  dislike++;
-  clicks++;
-  if(clicks == 1){
-    document.getElementById("d1").innerHTML = dislike
-    downArrow[0].style.pointerEvents = 'none'
-  }else if(clicks == 2){
-    document.getElementById("d1").innerHTML = dislike
-    likes--;
-    document.getElementById("u1").innerHTML = likes
-    downArrow[0].style.pointerEvents = 'none'
-    upArrow[0].style.pointerEvents = 'auto'
-    clicks = 1;
-  }
+// function voteDownPost(y){
+//   var idOfSpanUp = y.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild
+//   var idOfSpanDown = y.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.lastChild
+//   var imgDownArrow = y
+//   var imgUpArrow = y.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling
+//   // var clicks = 0
+//   console.log(y.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling)
+
+//   if (clicks == 1) {
+//     idOfSpanDown.innerHTML = +idOfSpanDown.innerHTML + 1
+//   }else if(clicks == 2){
+//     idOfSpanDown.innerHTML = +idOfSpanDown.innerHTML + 1
+//     idOfSpanUp.innerHTML = +idOfSpanUp.innerHTML - 1
+//     imgUpArrow.addEventListener("click",function(){voteUpPost(this)},{once:true})
+//     clicks = 1
+//   }
+// }
+function test(){
+  var upArrow = document.getElementsByClassName("numberUp");
+  var downArrow = document.getElementsByClassName("numberDown");
+  likes++
+  document.getElementsByClassName('numberUp').innerHTML = "+" + likes
+
 }
