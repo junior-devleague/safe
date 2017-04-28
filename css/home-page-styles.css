@@ -269,6 +269,16 @@ body{
   flex-direction: column;
 }
 
+.numberUp{
+	width: 27px;
+	height: 32px;
+}
+
+.numberDown{
+	width: 27px;
+	height: 32px;
+}
+
 .downArrow{
   width: 35px;
   height: 35px;
@@ -277,7 +287,7 @@ body{
 }
 
 .upArrow,.downArrow{
-	font-size: 30px;
+	font-size: 25px;
 }
 
 
