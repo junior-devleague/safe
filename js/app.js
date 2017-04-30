@@ -73,24 +73,56 @@ var click = 0;
 function voteUpPost(z){
   var idOfSpan = z.previousSibling.previousSibling.firstChild.nextSibling;
   // console.log(z.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild)
-  // console.log(z.className)
+  console.log(z.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling)
   //console.log(z.parentElement.getElementsByTagName('IMG')[0])
   	// z.addEventListener("click", function(){voteUpPost(this)},{once:true})
   click++
   if (z.className == 'numberUp'){
+    var imgD = z.parentElement.parentElement.lastChild.previousSibling.lastChild.previousSibling
   	var spanD1 = z.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.firstChild.nextSibling
   	idOfSpan.innerHTML =  +idOfSpan.innerHTML + 1
   	if(click == 2){
   		spanD1.innerHTML = +spanD1.innerHTML - 1
-  		click = 1
+  		click = 0
+      imgD.addEventListener("click", function(){
+        subtractNum(this)
+      }, {once:true})
   	}
   }else if (z.className == 'numberDown'){
   	var spanU1 = z.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild
+    var imgU = z.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling
   	idOfSpan.innerHTML = +idOfSpan.innerHTML + 1
   	if (click == 2) {
   		spanU1.innerHTML = +spanU1.innerHTML - 1
-  		click = 1
+  		click = 0
+      imgU.addEventListener("click", function(){
+        subtractNum(this)
+      }, {once:true})
   	}
+  }
+}
+
+function subtractNum(y){
+  var idOfSpan = y.previousSibling.previousSibling.firstChild.nextSibling;
+  if (y.className == 'numberUp'){
+    var imgD = y.parentElement.parentElement.lastChild.previousSibling.lastChild.previousSibling
+    var spanD1 = y.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.firstChild.nextSibling
+
+    idOfSpan.innerHTML =  +idOfSpan.innerHTML + 1
+    spanD1.innerHTML = +spanD1.innerHTML - 1
+    imgD.addEventListener("click", function(){
+        subtractNum(this)
+      }, {once:true})
+
+  }else if (y.className == 'numberDown'){
+    var spanU1 = y.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild
+    var imgU = y.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling
+
+    idOfSpan.innerHTML = +idOfSpan.innerHTML + 1
+    spanU1.innerHTML = +spanU1.innerHTML - 1
+    imgU.addEventListener("click", function(){
+        subtractNum(this)
+      }, {once:true})
   }
 }
 
