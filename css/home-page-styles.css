@@ -132,7 +132,10 @@ font-family: 'Lato', sans-serif;
 .commentBox{
   display: none;
   width: 97%;
-  height: 230px;
+  height: 210px;
+  position: absolute;
+  bottom: 30px;
+  left: 1.5%;
 }
 
 .addComment{
@@ -145,9 +148,9 @@ font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
   background-color: white;
 	color: #838383;
-	position: absolute;
+/*	position: absolute;
 	bottom: 10px;
-	left: 1.5%;
+	left: 1.5%;*/
 	resize: none;
 	outline: none; /*gets rid of blue outline*/
 }

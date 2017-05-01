@@ -71,7 +71,7 @@ var openCloseTopic = function(commentDiv){
       //console.log(topicDiv.childNodes[i]);
       if(topicDiv.childNodes[i].tagName == "SPAN"){
         currentlyOpenComBox = topicDiv.childNodes[i];
-        console.log(currentlyOpenComBox)
+        //console.log(currentlyOpenComBox)
       }
     }
   }
@@ -79,7 +79,7 @@ var openCloseTopic = function(commentDiv){
   //When user clicks on "view comments", expand div
   if(event.target == commentDiv){
     //this closes others div if you click on "view comments" and another div is already open
-    var topicClass = document.getElementsByClassName("topic, userCom");
+    var topicClass = document.getElementsByClassName("topic");
     //console.log(topicClass);
     for(var i = 0; i < topicClass.length; i++){
       //console.log(topicClass[i].clientHeight)
