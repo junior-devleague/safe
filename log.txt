@@ -81,9 +81,18 @@ Zak: Give help where help is needed
 
 4/28/17
 
-Scrum Meetng #9:
+Scrum Meeting #9:
 Mock data was completed, ready to merge with master; transition to make topic dissapear will be started on today. Further progress on turning voting system to a more dynamic flow with event listeners and without classes and id's. Started on comment section, having problems arrangin divs in a proper order.
 
 Talon: Making topic dissapear (animation / transition)
 Christian and Zak: Voting system, revuilding structure to be more dynamic
 Zedrick and Jomari: Comment box layout and incorporating with JavaScript
+
+5/1/17
+
+Scrum Meeting 10:
+Refined mock data further, div fade out animation on a certain numberof dislikes will be started. Comment box strucutre was finished  but is not fully working. Finished the voting system and merged with master; logic and JavaScript is now dynamic and fluid. Flexbox for topics will be added for better page dynamics.
+
+Talon: Working on finishing the fade away topic after certain amount of dislikes
+Christian: Flexbox for each topic
+Jomari, Zak, Zedrick: Completing JavaScript for the comments section
