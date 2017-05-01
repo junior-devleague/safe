@@ -106,21 +106,30 @@ font-family: 'Lato', sans-serif;
 }
 
 
-.votes{
-  width: 90px;
-  margin-top: 55px;
-  margin-right: 10px;
-  margin-left: auto;
-  display: inline-block;
+.containerVote{
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	margin-right: 30px;
+}
+
+.u1, .d1{
+	font-size: 25px;
 }
 
 .upArrow, .downArrow{
-  width: 35px;
+  width: 40px;
   display: inline-block;
   transition: 0.2s;
 }
 
-.upArrow:hover, .downArrow:hover{
+.numberUp, .numberDown{
+	width: 27px;
+	height: 32px;
+	transition: 0.1s;
+}
+
+.numberUp:hover, .numberDown:hover{
 	-webkit-transform: scale(0.93, 0.93);
 	-ms-transform: scale(0.93, 0.93);
 	transform: scale(0.93, 0.93);
