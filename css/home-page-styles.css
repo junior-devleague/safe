@@ -55,7 +55,8 @@ font-family: 'Lato', sans-serif;
 	height: 100%;
 	width: 85%;
 	margin-right: auto;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 }
 
 .description{
@@ -63,8 +64,10 @@ font-family: 'Lato', sans-serif;
   margin-top: 20px;
   width: 77%;
   height: 90px;
-  display: block;
-  overflow-y: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /*overflow-y: auto;*/
 }
 
 .titleBigger{
