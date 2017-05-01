@@ -32,3 +32,58 @@ The last and final webview (all-topic.html) was completed along with many UX and
 Christian and Zak: Combine different sort button overlays at different screen widths
 Zedrick and Jomari: Continue progress on single-topic css and expansion
 Talon: Review CSS code, remove duplicates; reorder properties
+
+4/17/17
+
+Scrum Meeting #4:
+CSS was neatly reordered into a general-styles.css to prevent repetitive styles throughout the different style sheets. More progress was made on expanding the topic on click; it was decided that this would be done using event listener to target one specific div rather than all divs with the same class.
+
+Christian: Pseudo code and logic behind voting system
+Zedrick, Jomari, and Zak: Work on using event listener instead of classes
+Talon: Styles for the voting, mock data, and vote animations
+
+4/19/17
+
+Scrum Meeting #5:
+Event listener has made slight progress, still opens all divs upon click; pseudo code logic for javascript was finished. Counters for number of votes and comments are currently being added; styling and animations on voting system has just been started. Researched local storage to store data locally via form.
+
+Christian: Refine pseudo code, finish counters, add number of votes above up & down arrow
+Zedrick, Jomari, and Zak: Troubleshoot/debug event listener errors upon click
+Talon: Fix local CSS merge conflicts, continue work on styling and animations for voting system
+
+4/21/17
+
+Scrum Meeting #6:
+Talon fixed merged conflicts, voting styles have been started on will continue progress; pseudo code finalized, HTML for voting system refined with flexbox and styles. Expand topic with eventListener is now functional and in stages of finalization. The say something form  custom dropdown is finishe, localStorage will be added to the form.
+
+Zedrick and Jomari: Expanding comments box upon click of topic
+Christian and Zak: Fix voting flexbox and work on implementing localStorage
+Talon: Voting system styles and animation when upvoting/downvoting
+
+4/24/17
+
+Scrum Meeting #7:
+Mock data is almost done, and voting styles still need to be started; fixed small SORT button bug. Researched collapsing of topc, finished the basis of voting code, still need to inplement to other topics. Topic expansion and closing was complete with event listeners etc. Local storage still needs to be worked on.
+
+Zedrick and Jonmari: Showing other users comments when topic expands
+Christian and Talon: Fix voting styles and flexbox, implement the voting system to other topics
+Zak: Start researching and adding local storage to form
+
+4/26/17
+
+Scrum Meeting #8:
+Mock data is complete with arrays and objects in JavaScript, div fade out will be started on. Reformatted vote system with flexbox for easier dynamic pages, trying to implement working voting system in JS without ID's and classes. Researched php, but will instead make a form using HTML.
+
+Talon: Refining the mock data, starting on fading div
+Christian: Finish addEventListener to the voting system
+Zedrick and Jomari: Research localStorage and start on comment box
+Zak: Give help where help is needed
+
+4/28/17
+
+Scrum Meetng #9:
+Mock data was completed, ready to merge with master; transition to make topic dissapear will be started on today. Further progress on turning voting system to a more dynamic flow with event listeners and without classes and id's. Started on comment section, having problems arrangin divs in a proper order.
+
+Talon: Making topic dissapear (animation / transition)
+Christian and Zak: Voting system, revuilding structure to be more dynamic
+Zedrick and Jomari: Comment box layout and incorporating with JavaScript

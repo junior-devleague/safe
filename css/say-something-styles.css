@@ -4,52 +4,6 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Lato', sans-serif;
 */
 
-header{
-	font-family: 'Orbitron', sans-serif;
-	height: 15%;
-	font-size: 40px;
-	text-align: center;
-	color: #D0011B;
-	margin-bottom: 0px;
-	margin-top: 40px;
-}
-
-#home{
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	width: 190px;
-	height: 30px;
-	background-color: #838383;
-	color: white;
-	border-radius: 5px;
-	padding-top: 10px;
-	margin-left: auto;
-	margin-right: 3%;
-	position: relative;
-	bottom: 35px;
-	transition: 0.3s;
-	transition-timing-function: ease-in;
-}
-
-#home:hover{
-	background-color: #EDEDED;
-	color: #838383;
-	transition: 0.3s;
-	transition-timing-function: ease-out;
-}
-
-#home a{
-	color: white;
-	transition: 0.3s;
-	text-decoration: none;
-}
-
-#home a:hover{
-	color: #838383;
-	transition: 0.3s;
-	text-decoration: none;
-}
-
 .container{
 	font-family: 'Raleway', sans-serif;
 	background-color: #EDEDED;
@@ -65,75 +19,65 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+	transition: 0.3s;
 }
 
-#boxOne{
-	font-family: 'Raleway', sans-serif;
-	width: 400px;
-	height: 40px;
-	transition: height 0.2s ease-in;
-	
-  border: 2px solid #838383;
+.button{
   color: #838383;
-  font-size: 12px;
-  resize: none;
+  border: 2px solid #838383;
   border-radius: 4px;
-}
-#boxOne:focus{
-	height: 130px;
+  cursor: pointer;
+  /*width: 400px;*/
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  background: url('../images/dropdown-arrow.png') no-repeat right white;
+  background-size: 29px 15px;
+  /*background-position: 360px 11px;*/
+  background-position: 95% 11px;
+  outline: none;
 }
 
-/*//////////////////////////////////////////////*/
-
-.button1 {
-    color: #838383;
-    border: 2px solid #838383;
-    border-radius: 4px;
-    cursor: pointer;
-    /*width: 400px;*/
-    width: 95%;
-    height: 40px;
-    text-align: left;
-    background: url('../images/dropdown-arrow.png') no-repeat right white;
-    background-size: 29px 15px;
-    background-position: 350px 13px;
-}
-.dropdown1{
+.dropdown{
 	position: relative;
 	display: inline-block;
-	width: 100%
+	width: 100%;
+	transition: 0.5s;
 }
+
 .dropdown-content{
-/*	display: none;
+  /*display: none;
 	position: absolute;*/
 	background-color: white;
 	/*width: 400px;*/
-	width: 95%;
+	width: 100%;
 	box-shadow: 0px 4px 10px;
-/*	z-index: 1;*/
-	/*///////////////*/
+  /*z-index: 1;*/
 	visibility: hidden; /* hides sub-menu */
 	opacity: 0;
 	position: absolute;
 	transform: translateY(-2em);
 	z-index: -1;
-	transition: all 0.8s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
+	transition: 0.3s ease-out;
 }
+
 .dropdown-content div{
 	color: #838383;
 	font-size: 12px;
 	height: 20px;
-	width: 400px;
+	width: 380px;
 	padding: 12px 16px;
+	transition: 0.1s;
 }
+
 .dropdown-content div:hover{
 	background-color: #838383;
 	color: #EDEDED;
-	width: 368px;
-	border-radius: 4px;
+	width: 379px;
 	cursor: default;
+	transition: 0.2s;
 }
+
 .showTopic{
 	/*display: block;
 	transform: translateY(0%);*/
@@ -141,32 +85,26 @@ header{
 	opacity: 1;
 	z-index: 1;
 	transform: translateY(0%);
-	transition-delay: 0.3s;
+	transition-delay: 0.01s;
 }
-/*.dropdown{
+
+#boxOne{
+	font-family: 'Raleway', sans-serif;
 	width: 400px;
 	height: 40px;
-	border: 2px solid #838383;
-	overflow: hidden;
-	background: url('../images/dropdown-arrow.png') no-repeat right white;
-	background-size: 29px 15px;
-	border-radius: 4px;
-	background-position: 350px 13px;
-}
-
-.dropdown select{
-	background: transparent;
-	width: 420px;
-	height: 40px;
+	transition: height 0.3s ease-in;
+  border: 2px solid #838383;
   color: #838383;
-  border: 0;
   font-size: 12px;
+  resize: none;
+  border-radius: 4px;
+  transition: 0.4s;
+  outline: none;
 }
 
-.dropdown select option{
-  color: #838383;
-  width: 420px
-}*/
+#boxOne:focus{
+	height: 130px;
+}
 
 #boxTwo{
 	font-family: 'Raleway', sans-serif;
@@ -177,6 +115,8 @@ header{
 	color: #838383;
 	border-radius: 4px;
 	transition: height 0.3s ease-in;
+  transition: 0.4s;
+  outline: none;
 }
 #boxTwo:focus{
 	height: 130px;
@@ -194,6 +134,7 @@ header{
 	margin-right: auto;
 	display: block;
 	transition: 0.3s;
+	outline: none;
 }
 
 #submit:hover{
@@ -202,17 +143,8 @@ header{
 	border-radius: 10px;
 }
 
-@media only screen and (max-width: 820px){
-  #home{
-  	display: block;
-  	margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-  }
-}
-
 /* 420px width is for Nexus 5X/6P and iPhone 6 Plus screens */
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 465px){
 	.container{
 		width: 100%;
 		font-size: 17px;
@@ -221,32 +153,44 @@ header{
 
   .form{
 		width: 340px;
+		transition: 0.5s;
   }
 
-	#boxOne{
-		width: 330px;
-	  font-size: 12px;
-	}
+  .button{
+	  background: url('../images/dropdown-arrow.png') no-repeat right white;
+	  background-size: 29px 15px;
+	  background-position: 95% 11px;
+	  transition: 0.5s;
+  }
 
 	.dropdown{
 		width: 330px;
 		font-size: 12px;
+		transition: 0.5s;
 	}
 
-	.dropdown select{
-		width: 350px;
-	  font-size: 12px;
-	}
-
-	#boxTwo{
+	.dropdown-content div{
 		width: 330px;
-		font-size: 12px;
+		box-sizing: border-box;
+		height: 44px;
+		padding: 12px 16px;
+  }
+
+  .dropdown-content div:hover{
+		width: 330px;
+  }
+
+	#boxOne, #boxTwo{
+		width: 323px;
+	  font-size: 12px;
+	  transition: 0.5s;
 	}
 
 	#submit{
-		width: 230px;
+		width: 200px;
 		font-size: 12px;
 		margin-top: 10px;
+		transition: 0.5s;
 	}
 }
 
@@ -262,6 +206,12 @@ header{
 		width: 300px;
   }
 
+  .button{
+	  background: url('../images/dropdown-arrow.png') no-repeat right white;
+	  background-size: 29px 15px;
+	  background-position: 95% 11px;
+  }
+
 	#boxOne{
 		width: 290px;
 	  font-size: 12px;
@@ -270,11 +220,6 @@ header{
 	.dropdown{
 		width: 290px;
 		font-size: 12px;
-	}
-
-	.dropdown select{
-		width: 310px;
-	  font-size: 12px;
 	}
 
 	#boxTwo{
@@ -301,6 +246,12 @@ header{
 		width: 270px;
   }
 
+  .button{
+	  background: url('../images/dropdown-arrow.png') no-repeat right white;
+	  background-size: 29px 15px;
+	  background-position: 95% 11px;
+  }
+
 	#boxOne{
 		width: 260px;
 	  font-size: 11px;
@@ -309,11 +260,6 @@ header{
 	.dropdown{
 		width: 260px;
 		font-size: 11px;
-	}
-
-	.dropdown select{
-		width: 380px;
-	  font-size: 11px;
 	}
 
 	#boxTwo{
@@ -327,5 +273,3 @@ header{
 		margin-top: 10px;
 	}
 }
-/*///////////////////////////////////////////*/
-

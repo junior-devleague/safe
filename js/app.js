@@ -1,11 +1,10 @@
-console.log ("Sanity Check");
+// console.log ("Sanity Check");
 
-//SORT OVERLAY
+//SORT OVERLAY ~ZAK
 function openOverlay(x){
   document.getElementById("sortOverlay").style.border = "2px solid #838383";
   document.getElementById("sortOverlay").style.width = "250px";
   if(x === 1){
-  	//marginLeft: 0 is for smaller screen widths
   	document.getElementById("sortOverlay").style.marginLeft = "0";
   	var mostRecentHeight = document.getElementById("mostRecent").offsetHeight;
   	document.getElementById("sortOverlay").style.height = mostRecentHeight + "px";
@@ -24,11 +23,7 @@ function closeOverlay(){
 	document.getElementById("sortOverlay").style.border = "0";
 }
 
-
-
-
-/* SAY SOMETHING FORM */
-
+//SAY SOMETHING FORM ~CHRISTIAN
 function clickDrop(x){
   if(x == 1){
     document.getElementById("topicDrop").classList.toggle("showTopic");
@@ -38,36 +33,108 @@ function clickDrop(x){
 }
 
 function replaceButton(id){
-  if (id == "SCIENCE LAB" || id == "COMPUTER LAB" || id=="CAFETERIA"){
+  if (id == "SCIENCE LAB" || id == "COMPUTER LAB" || id == "CAFETERIA"){
     document.getElementById("whatTopic").innerHTML = (id);
   }else if(id == "PRINCIPAL" || id == "COUNSELOR" || id == "MAIN OFFICE" || id == "JANITOR"){
     document.getElementById("whatContact").innerHTML = (id);
   }
 }
 
+window.onclick = function(event){
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	if (!event.target.matches(".button")){
+		for (var i = 0; i < dropdowns.length; i++) {
+			dropdowns[i].classList.remove("showTopic");
+		}
+	}else if (event.target.matches("#whatTopic")){
+    dropdowns[1].classList.remove("showTopic");
+  }
+}
 
-/*Vote System*/
+//NEW AND IMPROVED EXPANSION ~ZEDRICK & MS TORNEROS <3
+/*var expandTopic = function(div){ //anonymous function
+  //console.log(div);
+  div.parentElement.parentElement.parentElement.style.height = "400px";
+  //var attribute = this.getAttribute("data-myattribute");
+  //alert(attribute);
+}*/
 
+//REDONE EXPANSION ~ZAK (TOOK FOREVER, BUT BASICALLY TAKES INTO ACCOUNT ALL CLICKS OPENING/CLOSING TOPICS)
+var currentlyOpenComBox;
+var openCloseTopic = function(commentDiv){
+  var topicDiv =  commentDiv.parentElement.parentElement.parentElement;
+  //console.log(topicDiv);
 
-/*Most Likes go on top of div (Either shifts on top/ fade in fade out)*/
+  //diplays comment box at bottom of topic
+  if(currentlyOpenComBox == null){
+    for(var i = 0; i < topicDiv.childNodes.length; i++){
+      //console.log(topicDiv.childNodes[i]);
+      if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+        currentlyOpenComBox = topicDiv.childNodes[i];
+      }
+    }
+  }
 
+  //When user clicks on "view comments", expand div
+  if(event.target == commentDiv){
+    //this closes others div if you click on "view comments" and another div is already open
+    var topicClass = document.getElementsByClassName("topic");
+    //console.log(topicClass);
+    for(var i = 0; i < topicClass.length; i++){
+      //console.log(topicClass[i].clientHeight)
+      if(topicClass[i].clientHeight == "400"){ //if any topic is already open close it
+        //console.log(topicClass[i]);
+        //this keeps only one topic open at all times
+        currentlyOpenComBox.style.display = "none";
+        topicClass[i].style.height = "145px";
+      }
+    }
 
+    for(var i = 0; i < topicDiv.childNodes.length; i++){
+      //console.log(topicDiv.childNodes[i]);
+      if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+        currentlyOpenComBox = topicDiv.childNodes[i];
+      }
+    }
 
-/*When up arrow clicks add plus one to the number above the arrow img,
-it compare number and change position
-the image then becomes unclickable/locks.
-The counter of likes starts at 0 and add +1.
-target the Id and change the innerHTML.*/
+    //console.log("clicked on comment div");
+    topicDiv.style.height = "400px";
+    currentlyOpenComBox.style.display = "block";
+  }
+  //When the user clicks anywhere outside of the topic, close it
+  else{
+    //checks to see if user is clicking inside topic div
+    if(topicDiv.contains(event.target) && topicDiv.style.height == "400px"){ //this could be put as an else if statement also...
+      //console.log("clicked on topic div");
+      topicDiv.style.height = "400px";
+    }
+    else{
+      //console.log("clicked off topic div");
+      topicDiv.style.height = "145px";
+      currentlyOpenComBox.style.display = "none";
+    }
+  }
+}
 
+//checks all clicks on window
+var openTopic;
+window.addEventListener("click", function(){
+  openCloseTopic(openTopic); //closeTopic's parameter becomes "this" (the current open div)
+},
+false)
 
+var commentClass = document.getElementsByClassName("comments");
+//console.log(commentClass);
+for(var i = 0; i < commentClass.length; i++){
+  commentClass[i].addEventListener("click", function(){
+    openCloseTopic(this);
+    openTopic = this; //makes "this" global
+  }, 
+  false);
+  //classname[i].style.height.test.parentElement = "500px";
+}
 
-/*When down arrow clicks add plus one,
- check if its equal to the number of downvote
-  then fade out if it exceed the number*/
-//////////////////////////////////////////////////////
-
-//MAKE ONE FUNCTION
-// If img clicked remove event listener
+//VOTE SYSTEM
 
 var click = 0;
 var upVote = function voteUpPost(z){
@@ -75,13 +142,11 @@ var upVote = function voteUpPost(z){
   var idOfSpan = z.previousSibling.previousSibling.firstChild.nextSibling;
   // console.log(z.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild)
   // console.log(z.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling)
-  //console.log(z.parentElement.getElementsByTagName('IMG')[0])
-  	// z.addEventListener("click", function(){voteUpPost(this)},{once:true})
   click++
   if (z.className == 'numberUp'){
     var imgD = z.parentElement.parentElement.lastChild.previousSibling.lastChild.previousSibling
-  	var spanD1 = z.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.firstChild.nextSibling
-  	idOfSpan.innerHTML =  +idOfSpan.innerHTML + 1
+    var spanD1 = z.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.firstChild.nextSibling
+    idOfSpan.innerHTML =  +idOfSpan.innerHTML + 1
     imgD.removeEventListener("click", upVote)
     imgD.addEventListener("click", function(){subtractNum(this)}, {once:true})
   }else if (z.className == 'numberDown'){
@@ -92,14 +157,6 @@ var upVote = function voteUpPost(z){
     imgU.addEventListener("click", function(){subtractNum(this)}, {once:true})
   }
 }
-    // if(click == 2){
-      // spanD1.innerHTML = +spanD1.innerHTML - 1
-      // click = 0
-  	// }
-    // if (click == 2) {
-      // spanU1.innerHTML = +spanU1.innerHTML - 1
-      // click = 0
-    // }
 
 function subtractNum(y){
   var idOfSpan = y.previousSibling.previousSibling.firstChild.nextSibling;
@@ -125,14 +182,7 @@ function subtractNum(y){
   }
 }
 
-// function changeVote(y){
-// 	var idOfSpan = y.previousSibling.previousSibling.firstChild.nextSibling;
-
-// 	idOfSpan.innerHTML = +idOfSpan.innerHTML + 1
-// }
-
 for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
   document.getElementsByClassName("numberUp")[i].addEventListener("click", upVote, {once:true})
-
   document.getElementsByClassName("numberDown")[i].addEventListener("click", upVote, {once:true})
 }
