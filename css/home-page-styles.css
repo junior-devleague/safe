@@ -39,6 +39,10 @@ font-family: 'Lato', sans-serif;
 	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	transition: 0.2s;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }
 
 .topic:hover{
@@ -47,6 +51,7 @@ font-family: 'Lato', sans-serif;
 	transform: scale(1.03, 1.03);
 	transition: 0.2s;
 	transition-timing-function: ease;
+	opacity: 0;
 }
 
 .allInfo{
