@@ -164,6 +164,7 @@ font-family: 'Lato', sans-serif;
 /*Comment Section*/
 .parentCom{
 	margin-top: -15px;
+
 }
 
 .userCom{
@@ -175,6 +176,18 @@ font-family: 'Lato', sans-serif;
   margin-bottom: 5px;
   box-sizing: border-box;
 }
+
+
+/*When click .open add class to open?*/
+.commentSect {
+	opacity: 0;
+}
+
+.commentSect {
+	transition: opacity 5s ease-in;	
+	opacity: 1;
+}
+
 
 /*Popular Topics, right side of screen*/
 
