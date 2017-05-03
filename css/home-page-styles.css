@@ -27,8 +27,8 @@ font-family: 'Lato', sans-serif;
 	margin-bottom: 20px;
 	/*padding-left: 60px;
 	padding-top: 20px;
-  height: 140px;*/
-  height: 145px;
+  	height: 140px;*/
+  	height: 145px;
 	width: 90%;
 	background-color: white;
 	font-size: 13px;
@@ -40,6 +40,7 @@ font-family: 'Lato', sans-serif;
 	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	transition: 0.2s;
+	flex-basis: auto;
 	position: relative; /* this needs to be on parent to prevent commentBox from going outside div */
 }
 
@@ -146,7 +147,7 @@ font-family: 'Lato', sans-serif;
 	padding-top: 10px;
 	border: 2px solid #C4C4C4;
 	box-sizing: border-box;
-  background-color: white;
+  	background-color: white;
 	color: #838383;
 /*	position: absolute;
 	bottom: 10px;
@@ -161,13 +162,17 @@ font-family: 'Lato', sans-serif;
 }
 
 /*Comment Section*/
+.parentCom{
+	margin-top: -15px;
+}
+
 .userCom{
   margin-left: 12px;
   border: 2px solid;
   padding-left: 30px;
-  width: 109%;
+  width: 97%;
   height: 60px;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /*Popular Topics, right side of screen*/
