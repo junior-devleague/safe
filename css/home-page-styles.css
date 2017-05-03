@@ -55,8 +55,8 @@ font-family: 'Lato', sans-serif;
 	height: 100%;
 	width: 85%;
 	margin-right: auto;
-	display: flex;
-	flex-direction: column;
+	display: inline-block;
+	/*flex-direction: column;*/
 }
 
 .description{
@@ -67,7 +67,7 @@ font-family: 'Lato', sans-serif;
   display: flex;
   flex: 1;
   flex-direction: column;
-  /*overflow-y: auto;*/
+  overflow-y: auto;
 }
 
 .titleBigger{
@@ -181,4 +181,50 @@ font-family: 'Lato', sans-serif;
 	transition: 0.3s;
 	transition-timing-function: ease;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 424px) {
+
+
+
+	.containerVote{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin-top: 40px;
+		margin-right: 30px;
+	}
+
+	.upArrow, .downArrow{
+  	width: 40px;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: nowrap;
+	}
+
+	.numberDown{
+		margin-top: 10px;
+	}	
+
+	.numberUp, .numberDown{
+		width: 27px;
+		height: 32px;
+	}
+
+	.topic{
+		height: 190px;
+	}
+
+	.description{
+		overflow-y: auto;
+		height: 100px;
+	}
+
+	.allInfo{
+		height: 90%;
+	}
+
+	.bottomInfo{
+		margin-left: 20px;
+	}
 }
