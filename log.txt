@@ -96,3 +96,13 @@ Refined mock data further, div fade out animation on a certain numberof dislikes
 Talon: Working on finishing the fade away topic after certain amount of dislikes
 Christian: Flexbox for each topic
 Jomari, Zak, Zedrick: Completing JavaScript for the comments section
+
+5/3/17
+
+Scrum Meeting 11:
+Mock data is finished, researched how to disappear "div" ~Talon. Fixed CSS and flexbox for homepage ~Christian. Worked on comment box divs, still ned to refine it.
+
+Talon : Refine disappearing function
+Christian : Fix the CSS for homepage and add media queries for the arrow
+Jomari, Zedrick : Work on comment div
+Zak : He's out, so useless
