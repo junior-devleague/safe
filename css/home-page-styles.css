@@ -137,6 +137,8 @@ font-family: 'Lato', sans-serif;
   position: absolute;
   bottom: 30px;
   left: 1.5%;
+  opacity: 0;
+  transition: 1s;
 }
 
 .addComment{
@@ -179,15 +181,15 @@ font-family: 'Lato', sans-serif;
 
 
 /*When click .open add class to open?*/
-.commentSect {
+/*.commentSect {
 	opacity: 0;
 }
 
-.commentSect {
+.commentSect:onclick {
 	transition: opacity 5s ease-in;	
 	opacity: 1;
 }
-
+*/
 
 /*Popular Topics, right side of screen*/
 
