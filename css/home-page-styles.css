@@ -51,7 +51,7 @@ font-family: 'Lato', sans-serif;
 	transform: scale(1.03, 1.03);
 	transition: 0.2s;
 	transition-timing-function: ease;
-	opacity: 0;
+	opacity: 0.2;
 }
 
 .allInfo{
