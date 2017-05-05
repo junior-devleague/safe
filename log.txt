@@ -106,3 +106,13 @@ Talon : Refine disappearing function
 Christian : Fix the CSS for homepage and add media queries for the arrow
 Jomari, Zedrick : Work on comment div
 Zak : He's out, so useless
+
+
+5/5/17
+
+Scrum Meeting 12:
+In all honesty, not much was done between the previous class. Flex for voting system at lower screen widths was started on to ensure better page responsiveness; started on the comment box animation (fade-in and fade-out). Started animation through fade-in and fade-out of topic when votes hit a certain amount of downvotes.
+
+Christian: Finishing flexbox at lower media queries
+Zedrick, Jomari, and Zak: Comment box animation on click
+Talon: Research more on fade-in / out animation for topics
