@@ -87,7 +87,6 @@ var openCloseTopic = function(commentDiv){
         //console.log(topicClass[i]);
         //this keeps only one topic open at all times
         currentlyOpenComBox.style.display = "none";
-        currentlyOpenComBox.style.opacity = "0";
         topicClass[i].style.height = "145px";
       }
     }
@@ -101,8 +100,7 @@ var openCloseTopic = function(commentDiv){
 
     //console.log("clicked on comment div");
     topicDiv.style.height = "400px";
-    currentlyOpenComBox.style.display = "block";
-    currentlyOpenComBox.style.opacity = "1";
+    currentlyOpenComBox.style.display = "block";   
   }
   //When the user clicks anywhere outside of the topic, close it
   else{
