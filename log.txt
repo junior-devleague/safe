@@ -78,3 +78,41 @@ Talon: Refining the mock data, starting on fading div
 Christian: Finish addEventListener to the voting system
 Zedrick and Jomari: Research localStorage and start on comment box
 Zak: Give help where help is needed
+
+4/28/17
+
+Scrum Meeting #9:
+Mock data was completed, ready to merge with master; transition to make topic dissapear will be started on today. Further progress on turning voting system to a more dynamic flow with event listeners and without classes and id's. Started on comment section, having problems arrangin divs in a proper order.
+
+Talon: Making topic dissapear (animation / transition)
+Christian and Zak: Voting system, revuilding structure to be more dynamic
+Zedrick and Jomari: Comment box layout and incorporating with JavaScript
+
+5/1/17
+
+Scrum Meeting 10:
+Refined mock data further, div fade out animation on a certain numberof dislikes will be started. Comment box strucutre was finished  but is not fully working. Finished the voting system and merged with master; logic and JavaScript is now dynamic and fluid. Flexbox for topics will be added for better page dynamics.
+
+Talon: Working on finishing the fade away topic after certain amount of dislikes
+Christian: Flexbox for each topic
+Jomari, Zak, Zedrick: Completing JavaScript for the comments section
+
+5/3/17
+
+Scrum Meeting 11:
+Mock data is finished, researched how to disappear "div" ~Talon. Fixed CSS and flexbox for homepage ~Christian. Worked on comment box divs, still ned to refine it.
+
+Talon : Refine disappearing function
+Christian : Fix the CSS for homepage and add media queries for the arrow
+Jomari, Zedrick : Work on comment div
+Zak : He's out, so useless
+
+
+5/5/17
+
+Scrum Meeting 12:
+In all honesty, not much was done between the previous class. Flex for voting system at lower screen widths was started on to ensure better page responsiveness; started on the comment box animation (fade-in and fade-out). Started animation through fade-in and fade-out of topic when votes hit a certain amount of downvotes.
+
+Christian: Finishing flexbox at lower media queries
+Zedrick, Jomari, and Zak: Comment box animation on click
+Talon: Research more on fade-in / out animation for topics

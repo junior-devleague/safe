@@ -134,3 +134,56 @@ for(var i = 0; i < commentClass.length; i++){
   false);
   //classname[i].style.height.test.parentElement = "500px";
 }
+
+//VOTE SYSTEM
+
+var click = 0;
+var upVote = function voteUpPost(z){
+  var z = this
+  var idOfSpan = z.previousSibling.previousSibling.firstChild.nextSibling;
+  // console.log(z.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild)
+  // console.log(z.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling)
+  click++
+  if (z.className == 'numberUp'){
+    var imgD = z.parentElement.parentElement.lastChild.previousSibling.lastChild.previousSibling
+    var spanD1 = z.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.firstChild.nextSibling
+    idOfSpan.innerHTML =  +idOfSpan.innerHTML + 1
+    imgD.removeEventListener("click", upVote)
+    imgD.addEventListener("click", function(){subtractNum(this)}, {once:true})
+  }else if (z.className == 'numberDown'){
+    var spanU1 = z.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild
+    var imgU = z.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling
+    idOfSpan.innerHTML = +idOfSpan.innerHTML + 1
+    imgU.removeEventListener("click", upVote)
+    imgU.addEventListener("click", function(){subtractNum(this)}, {once:true})
+  }
+}
+
+function subtractNum(y){
+  var idOfSpan = y.previousSibling.previousSibling.firstChild.nextSibling;
+  if (y.className == 'numberUp'){
+    var imgD = y.parentElement.parentElement.lastChild.previousSibling.lastChild.previousSibling
+    var spanD1 = y.parentElement.parentElement.lastChild.previousSibling.firstChild.nextSibling.firstChild.nextSibling
+
+    idOfSpan.innerHTML =  +idOfSpan.innerHTML + 1
+    spanD1.innerHTML = +spanD1.innerHTML - 1
+    imgD.addEventListener("click", function(){
+        subtractNum(this)
+      }, {once:true})
+
+  }else if (y.className == 'numberDown'){
+    var spanU1 = y.parentElement.parentElement.firstChild.nextSibling.firstChild.nextSibling.lastChild
+    var imgU = y.parentElement.parentElement.firstChild.nextSibling.lastChild.previousSibling
+
+    idOfSpan.innerHTML = +idOfSpan.innerHTML + 1
+    spanU1.innerHTML = +spanU1.innerHTML - 1
+    imgU.addEventListener("click", function(){
+        subtractNum(this)
+      }, {once:true})
+  }
+}
+
+for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
+  document.getElementsByClassName("numberUp")[i].addEventListener("click", upVote, {once:true})
+  document.getElementsByClassName("numberDown")[i].addEventListener("click", upVote, {once:true})
+}
