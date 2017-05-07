@@ -69,8 +69,9 @@ var openCloseTopic = function(commentDiv){
   if(currentlyOpenComBox == null){
     for(var i = 0; i < topicDiv.childNodes.length; i++){
       //console.log(topicDiv.childNodes[i]);
-      if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+      if(topicDiv.childNodes[i].tagName == "SPAN"){
         currentlyOpenComBox = topicDiv.childNodes[i];
+        //console.log(currentlyOpenComBox)
       }
     }
   }
@@ -92,14 +93,14 @@ var openCloseTopic = function(commentDiv){
 
     for(var i = 0; i < topicDiv.childNodes.length; i++){
       //console.log(topicDiv.childNodes[i]);
-      if(topicDiv.childNodes[i].tagName == "TEXTAREA"){
+      if(topicDiv.childNodes[i].tagName == "SPAN"){
         currentlyOpenComBox = topicDiv.childNodes[i];
       }
     }
 
     //console.log("clicked on comment div");
     topicDiv.style.height = "400px";
-    currentlyOpenComBox.style.display = "block";
+    currentlyOpenComBox.style.display = "block";   
   }
   //When the user clicks anywhere outside of the topic, close it
   else{
