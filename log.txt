@@ -116,3 +116,7 @@ In all honesty, not much was done between the previous class. Flex for voting sy
 Christian: Finishing flexbox at lower media queries
 Zedrick, Jomari, and Zak: Comment box animation on click
 Talon: Research more on fade-in / out animation for topics
+
+Scrum Meeting 13:
+
+Nothing was done. Comment box was finished with correct styles and display.
