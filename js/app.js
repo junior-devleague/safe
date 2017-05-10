@@ -187,3 +187,84 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
   document.getElementsByClassName("numberUp")[i].addEventListener("click", upVote, {once:true})
   document.getElementsByClassName("numberDown")[i].addEventListener("click", upVote, {once:true})
 }
+
+//LOCAL STORAGE
+
+//creates a function that generates a empty object that will be saved to localStorage
+(function(){
+  var user = {
+    comment: ""
+  }
+
+  //creates object that contains methods for localStorage handling
+  var handler = {
+    //saves user inputs as one entry to local storage
+    saveEntry: function (){
+      var inputs = document.querySelectorAll(".tcell");
+      user.id = inputs[0].value;
+      user.comment = inputs[1].value;
+
+      //converts object into JSON and store in localStorage
+      //setItem = method on storage
+      localStorage.setItem("user_" + localStorage.length, JSON.stringify(user));
+
+      //reloads the page
+      location.reload();
+      
+    },
+
+    //clears user input fields on the page
+    clearEntry: function(){
+      location.reload();
+    },
+
+    //displays user entries
+    displayEntry: function(){
+      if (localStorage.length > 0){
+        var render = "<div>";
+        render += "<div id='entry_container'>Entries:</div>";
+        // += adds on to the render
+        for (i = 0; i < localStorage.length; i++){
+          //gets the key
+          var key = localStorage.key(i);
+           //gets data from key
+          var entry = localStorage.getItem(key); 
+          //parses data back into object
+          var data = JSON.parse(entry); //research JSON.parse
+          render += "<ul>";
+          render += data.comment;
+          render += "</ul>";
+        }
+        render += "</div>";
+        display_container.innerHTML = render;
+      }
+    },
+    
+    clearEverything: function(){
+      localStorage.clear();
+      location.reload();
+    }
+  };
+
+  //Save Button Function
+  var save = document.getElementById('save');
+    save.addEventListener('click', handler.saveEntry);
+
+  //Clear User Input Function
+  var clear = document.getElementById('clear');
+    clear.addEventListener('click', handler.clearEntry);
+
+  //Clear All Entries
+  var clearAll = document.getElementById('clear_storage');
+    clearAll.addEventListener('click', handler.clearEverything);
+
+  window.onload = function () {
+    handler.displayEntry();
+  };
+})();
+
+// 1 : User input to local storage
+// 2 : Local Storage to Comment Box
+// 3 : Reduce Height of Comment Box
+// 4 : Add in one more Comment Box
+// 5 : Remove text area
