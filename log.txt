@@ -96,3 +96,34 @@ Refined mock data further, div fade out animation on a certain numberof dislikes
 Talon: Working on finishing the fade away topic after certain amount of dislikes
 Christian: Flexbox for each topic
 Jomari, Zak, Zedrick: Completing JavaScript for the comments section
+
+5/3/17
+
+Scrum Meeting 11:
+Mock data is finished, researched how to disappear "div" ~Talon. Fixed CSS and flexbox for homepage ~Christian. Worked on comment box divs, still ned to refine it.
+
+Talon : Refine disappearing function
+Christian : Fix the CSS for homepage and add media queries for the arrow
+Jomari, Zedrick : Work on comment div
+Zak : He's out, so useless
+
+
+5/5/17
+
+Scrum Meeting 12:
+In all honesty, not much was done between the previous class. Flex for voting system at lower screen widths was started on to ensure better page responsiveness; started on the comment box animation (fade-in and fade-out). Started animation through fade-in and fade-out of topic when votes hit a certain amount of downvotes.
+
+Christian: Finishing flexbox at lower media queries
+Zedrick, Jomari, and Zak: Comment box animation on click
+Talon: Research more on fade-in / out animation for topics
+
+Scrum Meeting 13:
+
+Nothing was done. Comment box was finished with correct styles and display.
+
+Scrum Meeting 14:
+
+Local storage for comments, adding the comment first to local storage then adding it to the comment box div, removing the entry to put in another comment. Mock data, loop through data and create a function that dynamically stores and build the topic divs on html. Say something form pull data from the entries and add to the mock data, then dynamically store to the topics. Sort topic buttons will sort topics anbd popular topics will link to entries regarding that specific topic.
+
+Jomari and Zedrick: Finish the localStorage comments, adding to the container divs and removing comment input
+Christian, Zak, and Talon: Finish building mock data and implement sort, display, loop
