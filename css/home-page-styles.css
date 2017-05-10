@@ -234,12 +234,13 @@ font-family: 'Lato', sans-serif;
 	}
 
 	.topic{
-		height: 190px;
+		height: 140px;
 	}
 
 	.description{
 		overflow-y: auto;
 		height: 100px;
+		font-size: 14px;
 	}
 
 	.allInfo{
@@ -247,7 +248,8 @@ font-family: 'Lato', sans-serif;
 	}
 
 	.bottomInfo{
-		margin-left: 20px;
+		margin-left: 0px;
+		font-size: 12px;
 	}
 }
 
