@@ -214,10 +214,6 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
       
     },
 
-    //clears user input fields on the page
-    clearEntry: function(){
-      location.reload();
-    },
 
     //displays user entries
     displayEntry: function(){
@@ -249,7 +245,10 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 
   //Save Button Function
   var save = document.getElementsByClassName('addComment');
-    save.addEventListener('click', handler.saveEntry);
+  // console.log(save);
+  save.forEach(function(element) {
+  element.addEventListener('click', handler.saveEntry);
+  })
 
   window.onload = function () {
     handler.displayEntry();
