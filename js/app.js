@@ -193,7 +193,8 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 //creates a function that generates a empty object that will be saved to localStorage
 (function(){
   var user = {
-    comment: ""
+    id: 0,
+    comment: "",
   }
 
   //creates object that contains methods for localStorage handling
@@ -247,22 +248,18 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
   };
 
   //Save Button Function
-  var save = document.getElementById('save');
+  var save = document.getElementsByClassName('addComment');
     save.addEventListener('click', handler.saveEntry);
-
-  //Clear User Input Function
-  var clear = document.getElementById('clear');
-    clear.addEventListener('click', handler.clearEntry);
-
-  //Clear All Entries
-  var clearAll = document.getElementById('clear_storage');
-    clearAll.addEventListener('click', handler.clearEverything);
 
   window.onload = function () {
     handler.displayEntry();
   };
 })();
 
+
+// Allow the image to become a button
+// Button is in class "addComment"
+// Error app.js:252 Uncaught TypeError: save.addEventListener is not a function
 // 1 : User input to local storage
 // 2 : Local Storage to Comment Box
 // 3 : Reduce Height of Comment Box
