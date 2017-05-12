@@ -62,7 +62,7 @@ window.onclick = function(event){
 //REDONE EXPANSION ~ZAK (TOOK FOREVER, BUT BASICALLY TAKES INTO ACCOUNT ALL CLICKS OPENING/CLOSING TOPICS)
 var currentlyOpenComBox;
 var openCloseTopic = function(commentDiv){
-  var topicDiv =  commentDiv.parentElement.parentElement.parentElement;
+  var topicDiv = commentDiv.parentElement.parentElement.parentElement;
   //console.log(topicDiv);
 
   //diplays comment box at bottom of topic
@@ -190,7 +190,7 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 
 //LOCAL STORAGE
 
-//creates a function that generates a empty object that will be saved to localStorage
+// creates a function that generates a empty object that will be saved to localStorage
 (function(){
   var user = {
     id: 0,
@@ -201,7 +201,7 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
   var handler = {
     //saves user inputs as one entry to local storage
     saveEntry: function (){
-      var inputs = document.querySelectorAll(".tcell");
+      var inputs = document.querySelectorAll(".addComment");
       user.id = inputs[0].value;
       user.comment = inputs[1].value;
 
@@ -243,22 +243,26 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
     }
   };
 
-  //Save Button Function
-  var save = document.getElementsByClassName('addComment');
+  // Save Button Function
+  var save = document.querySelectorAll('.sendBox');
   // console.log(save);
   save.forEach(function(element) {
   element.addEventListener('click', handler.saveEntry);
-  })
+  console.log(element);
+  });
+  
 
-  window.onload = function () {
-    handler.displayEntry();
-  };
+  // window.onload = function () {
+  //   handler.displayEntry();
+  // };
+
+
 })();
 
 
 // Allow the image to become a button
-// Button is in class "addComment"
-// Error app.js:252 Uncaught TypeError: save.addEventListener is not a function
+// Button (aka image) is in class "addComment"
+// Uncaught TypeError: save.forEach is not a function
 // 1 : User input to local storage
 // 2 : Local Storage to Comment Box
 // 3 : Reduce Height of Comment Box

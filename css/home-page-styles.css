@@ -162,6 +162,9 @@ font-family: 'Lato', sans-serif;
 	left: 1.5%;*/
 	resize: none;
 	outline: none; /*gets rid of blue outline*/
+  z-index: 0;
+  position: absolute;
+  overflow-y: hidden;
 }
 
 .addComment:focus{
@@ -201,4 +204,13 @@ font-family: 'Lato', sans-serif;
 	transition: 0.3s;
 	transition-timing-function: ease;
   text-decoration: none;
+}
+
+.sendBox{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 96%;
+  display: block; 
+  z-index: 1;
 }
