@@ -120,3 +120,10 @@ Talon: Research more on fade-in / out animation for topics
 Scrum Meeting 13:
 
 Nothing was done. Comment box was finished with correct styles and display.
+
+Scrum Meeting 14:
+
+Local storage for comments, adding the comment first to local storage then adding it to the comment box div, removing the entry to put in another comment. Mock data, loop through data and create a function that dynamically stores and build the topic divs on html. Say something form pull data from the entries and add to the mock data, then dynamically store to the topics. Sort topic buttons will sort topics anbd popular topics will link to entries regarding that specific topic.
+
+Jomari and Zedrick: Finish the localStorage comments, adding to the container divs and removing comment input
+Christian, Zak, and Talon: Finish building mock data and implement sort, display, loop
