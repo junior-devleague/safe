@@ -188,7 +188,7 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
   document.getElementsByClassName("numberDown")[i].addEventListener("click", upVote, {once:true})
 }
 
-//LOCAL STORAGE
+// LOCAL STORAGE
 
 // creates a function that generates a empty object that will be saved to localStorage
 (function(){
@@ -259,6 +259,28 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 
 })();
 
+//Remove Comment after hitting the sendBox button
+
+function removeAdd(argument) {
+  Element.prototype.remove = function() {
+      this.parentElement.removeChild(this);
+  }
+  NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+      for(var i = this.length - 1; i >= 0; i--) {
+          if(this[i] && this[i].parentElement) {
+              this[i].parentElement.removeChild(this[i]);
+          }
+      }
+  }
+  document.getElementsByClassName("sendBox").onclick = function() {remove()};
+}
+
+
+// console.log(child)
+// // Delete child
+// function erase(){
+// child.parentNode.removeChild(child);
+// };
 
 // Allow the image to become a button
 // Button (aka image) is in class "addComment"
