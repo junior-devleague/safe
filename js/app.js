@@ -286,11 +286,17 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 //ADD NEW COMMENT
 
 
-  document.getElementsByClassName("sendBox").onclick
+  document.getElementsByClassName("sendBox").onclick;
   var new_com = document.createElement('div');
-  new_com.className = "userCom" 
-  console.log(new_com)
+  new_com.className = "uberCom"; 
+  console.log(new_com);
 
+//APPLYING CSS TO uberCom DIV
+var myDiv = document.getElementsByClassName("uberCom");
+for (var i = myDiv.length -1; i > 0; i++) {
+  myDiv[i].style.backgroundColor = "#FFFFFF"
+}
+// myDiv[0].setAttribute("style", "border: 2px solid;");
 
 
 
