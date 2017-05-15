@@ -261,10 +261,11 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 
 //Remove Comment after hitting the sendBox button
 
-function removeAdd(argument) {
+//"Element.prototype" is basically extending the DOM 
   Element.prototype.remove = function() {
       this.parentElement.removeChild(this);
   }
+//Removes the div
   NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
       for(var i = this.length - 1; i >= 0; i--) {
           if(this[i] && this[i].parentElement) {
@@ -272,15 +273,26 @@ function removeAdd(argument) {
           }
       }
   }
-  document.getElementsByClassName("sendBox").onclick = function() {remove()};
-}
+  // document.getElementsByClassName("sendBox").onclick = function() {remove()};
+// function eraseAdd (){
+//   if (event.target == "sendBox") {
+    document.getElementsByClassName("send").remove();
+//   }
+// }
+//   window.addEventListener("click", function(){
+//   eraseAdd();
+// }, false )
+
+//ADD NEW COMMENT
 
 
-// console.log(child)
-// // Delete child
-// function erase(){
-// child.parentNode.removeChild(child);
-// };
+  document.getElementsByClassName("sendBox").onclick
+  var new_com = document.createElement('div');
+  new_com.className = "userCom" 
+  console.log(new_com)
+
+
+
 
 // Allow the image to become a button
 // Button (aka image) is in class "addComment"
