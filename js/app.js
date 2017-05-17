@@ -202,8 +202,7 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
     //saves user inputs as one entry to local storage
     saveEntry: function (){
       var inputs = document.querySelectorAll(".addComment");
-      user.id = inputs[0].value;
-      user.comment = inputs[1].value;
+      user.comment = inputs[0].value;
 
       //converts object into JSON and store in localStorage
       //setItem = method on storage
@@ -211,15 +210,17 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
 
       //reloads the page
       location.reload();
+      // alert(localStorage.length);
       
     },
 
 
     //displays user entries
     displayEntry: function(){
+      alert(localStorage);
       if (localStorage.length > 0){
-        var render = "<div>";
-        render += "<div id='entry_container'>Entries:</div>";
+        // var render = "<div>";
+        var render = "<div class='userCom'>";
         // += adds on to the render
         for (i = 0; i < localStorage.length; i++){
           //gets the key
@@ -228,12 +229,14 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
           var entry = localStorage.getItem(key); 
           //parses data back into object
           var data = JSON.parse(entry); //research JSON.parse
-          render += "<ul>";
+                              
           render += data.comment;
-          render += "</ul>";
+          render += "</div>";
         }
-        render += "</div>";
-        display_container.innerHTML = render;
+        //comments.innerHTML = render;
+        render += '<div class="send"><div class="sendBox" id="sending"></div></div>';
+        document.getElementById("comments").innerHTML += render;
+
       }
     },
     
@@ -244,35 +247,29 @@ for (var i = 0; i < document.getElementsByClassName("numberUp").length; i++) {
   };
 
   // Save Button Function
-  var save = document.querySelectorAll('.sendBox');
+  var save = document.getElementById('sending');
   // console.log(save);
-  save.forEach(function(element) {
-  element.addEventListener('click', handler.saveEntry);
-  console.log(element);
-  });
-  
+  save.addEventListener('click', handler.saveEntry);  
 
-  // window.onload = function () {
-  //   handler.displayEntry();
-  // };
-
-
+  window.onload = function () {
+    handler.displayEntry();
+  };
 })();
 
 //Remove Comment after hitting the sendBox button
 
 //"Element.prototype" is basically extending the DOM 
-  Element.prototype.remove = function() {
-      this.parentElement.removeChild(this);
-  }
-//Removes the div
-  NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-      for(var i = this.length - 1; i >= 0; i--) {
-          if(this[i] && this[i].parentElement) {
-              this[i].parentElement.removeChild(this[i]);
-          }
-      }
-  }
+//   Element.prototype.remove = function() {
+//       this.parentElement.removeChild(this);
+//   }
+// //Removes the div
+//   NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+//       for(var i = this.length - 1; i >= 0; i--) {
+//           if(this[i] && this[i].parentElement) {
+//               this[i].parentElement.removeChild(this[i]);
+//           }
+//       }
+//   }
   // document.getElementsByClassName("sendBox").onclick = function() {remove()};
 // function eraseAdd (){
 //   if (event.target == "sendBox") {
@@ -296,7 +293,7 @@ var myDiv = document.getElementsByClassName("uberCom");
 for (var i = myDiv.length -1; i > 0; i++) {
   myDiv[i].style.backgroundColor = "#FFFFFF"
 }
-// myDiv[0].setAttribute("style", "border: 2px solid;");
+myDiv[0].setAttribute("style", "border: 2px solid;");
 
 
 
