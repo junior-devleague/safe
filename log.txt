@@ -127,3 +127,10 @@ Local storage for comments, adding the comment first to local storage then addin
 
 Jomari and Zedrick: Finish the localStorage comments, adding to the container divs and removing comment input
 Christian, Zak, and Talon: Finish building mock data and implement sort, display, loop
+
+Scrum Meeting 15:
+
+Presentation was finished and uploaded to google slides. LocalStorage works comment box works, however still need to find a way to add the data to the div from localStorage.Currently removes the textarea, creates a new div, but still needs to be linked to a the send button and apply CSS to new div.
+
+Zak: Refine presentation
+Zedrick and Jomari: Finish local storage
