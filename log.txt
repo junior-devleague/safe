@@ -134,3 +134,10 @@ Presentation was finished and uploaded to google slides. LocalStorage works comm
 
 Zak: Refine presentation
 Zedrick and Jomari: Finish local storage
+
+Scrum Meeting 16:
+
+localStorage is working but still needs refinements. Comments still need to be pulled form localStorage, button does work but does is not linked up to the function. getElementById is not working, therefore, we can't shrink the height of the other comments once a new one is added. Presentation has been finalized and speech id being worked on.
+
+Zak: Work on presentation speech
+Zedrick and Jomari: localStorage comments
